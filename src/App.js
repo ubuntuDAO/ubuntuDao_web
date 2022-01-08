@@ -217,7 +217,7 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                       <img alt="info" src={MobileDistribution}
                          className="mobile-distribution-image-style"
                     style={{
-                        width:'10rem'
+                        width:'20rem'
                     }}
                     />
                 </div>
@@ -226,7 +226,7 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
               <img alt="info"  src={MobileRoadmap}
                          className="mobile-roadmap-image-style"
                     style={{
-                        width:'10rem'
+                        width:'20rem'
                     }}
                     />
                     <img alt="info"  src={Roadmap}
