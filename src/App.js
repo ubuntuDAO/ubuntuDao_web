@@ -18,6 +18,13 @@ import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
 import Positioning from "./images/Positioning.svg";
 import Promotion from "./images/Promotion.svg";
+import Telegram from "./images/telegram.svg";
+import Facebook from "./images/facebook.svg";
+import Instagram from "./images/instagram.svg";
+import Twitter from "./images/twitter.svg";
+import OverviewText from "./images/OverviewText.svg";
+import ObjectivesText from './images/ObjectivesText.svg';
+import TokenomicsText from './images/TokenomicsText.svg';
 import MobileRoadmap from './images/mobileRoadmap.svg'
 import MobileDistribution from './images/mobileDistribution.svg'
 import TokenDistribution from './images/tokenDistributionImage.svg'
@@ -43,8 +50,11 @@ export const App  = () => {
     <div className="main-body">
     {/* welcome page */}
         <div id="welcome-page" className="frame-1"
+     
+        >
+        <div className="welcome-container"
         style={{
-             backgroundImage: "url(/homepageImage.svg)"
+            backgroundImage: "url(/homeImageFirstHalf.svg)"
         }}
         >
             <div className="navigation-menu">
@@ -79,6 +89,16 @@ export const App  = () => {
                     <p>WHITE PAPER</p>
                     </a>
             </div>
+            
+        </div>
+            <div    
+                className="second-section"
+                style={{
+                     backgroundImage: "url(/SecondHalfHomePage.svg)"
+                }}
+                >
+            <p></p>
+            </div>
         </div>
         {/* end of welcome page */}
         {/* about page */}
@@ -87,7 +107,7 @@ export const App  = () => {
                 <img  alt="info" src={UbuntuDAO} className="about-image-style"/>
              </div>
              <div className="about-info-section">
-                <h1 className="about-header">WHAT IS UBUNTU DAO?</h1>
+                <img src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
                 <p className="about-text">It is a Blockchain Project that leverages the simplicity and communal spirit associated with meme tokens to drive Blockchain adoption and very importantly, promote a creator-ecosystem (web3 Startups) in Africa. The movement has already begun; to transit Africa from a (sadly) default consumption tilt to becoming production conscious and the Ubuntu Dao Project further emphasizes the truth that Africans are innovative enough and we can change ‘our’ world and sure enough ‘the’ world.              </p>
             <a className="about-link"
@@ -101,7 +121,7 @@ export const App  = () => {
         <div id="objectives-page" className="frame-3">
             
            
-                <h1 className="objectives-header">OUR OBJECTIVES</h1>
+                <img src={ObjectivesText} className="objectives-header"/>
               {/* objectives card */}
               <div className="objectives-container">
                <div className="objectives-card">
@@ -184,8 +204,8 @@ export const App  = () => {
         <div id="tokenomics-page" className="frame-2">
             
              <div className="tokenomics-info-section">
-                <h1 className="tokenomics-header">WHAT IS UBUNTU DAO?</h1>
-               
+             
+               <img src={TokenomicsText} className="tokenomics-header"/>
                 <p className="tokenomics-text"><b>PRESALE</b><br/>
 16.6% (25 trn) of the total circulating supply will be allocated for Presale. Presale buyers would have the privilege of significantly larger proportions for the airdrop.<br/>
 
@@ -243,10 +263,18 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
         <div id="footer-section" className="footer">
             <div className="footer-section-1">
                 <nav className="footer-social">
-                    <p>facebook</p>
-                    <p>twitter</p>
-                    <p>linkedin</p>
-                    <p>Discord</p>
+                    <div>
+                        <img alt="info" src={Facebook}/>
+                    </div>
+                   <div>
+                        <img alt="info" src={Telegram}/>
+                    </div>
+                    <div>
+                        <img alt="info" src={Twitter}/>
+                    </div>
+                   <div>
+                        <img alt="info" src={Instagram}/>
+                    </div>
                 
                 </nav>
                 <div className="footer-links">

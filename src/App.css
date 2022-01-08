@@ -3,13 +3,14 @@
   background-color: #fff;
   /* margin-left: 30; */
  margin:0 auto;
- font-family:'roboto'
+ overflow-x: hidden;
+ font-family:'Poppins'
  
 }
 
 .frame-1{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     height:100vh;
     width:100%;
@@ -30,10 +31,12 @@
      padding-left:6rem;
 }
 .navigation-list{
+    padding-left: 10rem;
     display:flex;
     top: 0px;
     flex-direction:row;
      width:50%;
+     align-items: flex-end;
 }
 .nav-link{
     margin-left:1rem;
@@ -43,7 +46,15 @@
     width:100%;
     padding: 6rem;
 }
-
+.welcome-container{
+    width: 50%;
+    height: 100%;
+}
+.second-section{
+    width: 50%;
+    height: 100%;
+    margin-left: -2rem;
+}
 .welcome-header{
     font-size:2rem;
     width:50%;
@@ -84,15 +95,14 @@ color: #ffffff;
     width:100%;
 }
 .about-image{
-    width:50%
+    width:20rem
 }
 .about-info-section{
-    width:50%;
+    width:40%;
     padding-top:5rem;
-    margin-right:10rem;
 }
 .about-header{
-color:rgba(53, 44, 44, 1)
+    width: 30rem;
 }
 .about-sub-header{
     color:#620C0D
@@ -100,7 +110,7 @@ color:rgba(53, 44, 44, 1)
 
 
 .about-text{
-
+    width: 65%;
 }
 
 .about-link{
@@ -117,6 +127,7 @@ color:rgba(53, 44, 44, 1)
 }
 
 .frame-3{
+    width: 100%;
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -125,7 +136,9 @@ color:rgba(53, 44, 44, 1)
 }
 
 .objectives-header{
-    margin-right:5rem;
+    display: flex;
+    width: 40rem;
+    align-self: center;
     color:rgba(53, 44, 44, 1)
 }
 
@@ -137,28 +150,35 @@ color:rgba(53, 44, 44, 1)
     flex-direction:row;
     flex-wrap: wrap;
     padding:6rem;
+    padding-top: 2rem;
 }
 
 .objectives-card{
     margin:0.8rem;
 }
 
-.tokenomics-page{
+#tokenomics-page{
     width:100%;
+    padding-top: 2rem;
     padding:6rem;
     display:flex;
     flex-direction:row;
-    flex-wrap:wrap;
+   
 }
 
 .tokenomics-info-section{
-    width:50%;
-    padding-top:10rem;
+    width:35%;
+    padding-top:5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .tokenomics-image{
-    width:50%;
+    width:40%;
     padding:5rem;
+}
+.tokenomics-image-style{
+    width: 35rem;
 }
 .tokenomics-header{
 color:rgba(53, 44, 44, 1)
@@ -167,11 +187,18 @@ color:rgba(53, 44, 44, 1)
 .frame-4{
     /* background: url('ubuntuDAO.svg'), #620C0D; */
     height:1793px;
+    width: 80%;
     display:flex;
     flex-direction:column;
    padding-top:15rem;
    color:#ffffff;
     align-items:center;
+    padding: 0%;
+}
+
+.token-distribution-header{
+    justify-self: center;
+    align-self: center;
 }
 
 .token-distribution-header{
@@ -184,6 +211,8 @@ color:rgba(53, 44, 44, 1)
 .token-distribution-image-style{
      display:flex;
      visibility:visible;
+     justify-self: center;
+     align-self: center;
 }
 .token-roadmap-image-style{
    display:flex;
@@ -218,29 +247,32 @@ color:rgba(53, 44, 44, 1)
     display:flex;
     flex-direction: row;
 }
-.footer-social p{
+.footer-social div{
     margin: 0.5rem;
 }
 .footer-section-1{
-    width:30%;
+    margin: 1rem;
+    width: 20rem;
     flex-direction:column;
     display:flex;
     justify-content:flex-end;
 }
 .footer-section-2{
-    width:30%;
+   width: 20rem;
     display:flex;
     align-items:flex-end;
     justify-content:center;
+    margin: 1rem;
 }
 
 
 .footer-section-3{
-    width:30%;
+    width: 20rem;
   flex-direction:column;
     display:flex;
     justify-content:flex-end;
     align-items:flex-end;
+    margin: 1rem;
 }
 
 
@@ -250,10 +282,16 @@ color:rgba(53, 44, 44, 1)
 @media (min-width:240px) and (max-width: 600px) {
   .main-body{
     overflow-x: hidden;
+     margin:0 auto;
+     max-width: 100vw;
   }
   .frame-1{
-     max-width:100%;
-     height: 40rem;
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     height: 100vh;
+
+     
   }
   .navigation-menu{
     
@@ -268,8 +306,8 @@ color:rgba(53, 44, 44, 1)
     display:flex;
     top: 0px;
     flex-direction:row;
-     width:50%;
-     padding-left:12rem;
+     width:100%;
+     padding-left:0;
      align-items: flex-end;
      justify-content: flex-end;
 }
@@ -282,8 +320,8 @@ display: none;
 .nav-menu-bar{
     display: flex;
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 1rem;
+    right: 5rem;
     visibility: visible;
     
     justify-self: flex-end;
@@ -295,7 +333,8 @@ display: none;
  }
   .welcome-section{
       padding:3rem;
-      padding-top:10rem;
+      padding-top:3rem;
+      
   }
   .welcome-text{
       font-size:1.2rem;
@@ -310,11 +349,24 @@ display: none;
       font-size:0.8rem;
   }
 
+  .welcome-container{
+    width: 100%;
+    height: 50%;
+}
+
+.second-section{
+width: 100%;
+    height: 50%;
+    margin: 0;
+}
+
   .frame-2{
       flex-direction:column;
       display:flex;
       padding:0;
-      width: 100%;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
       
       
   }
@@ -323,52 +375,56 @@ display: none;
       margin-left: 2rem;
   }
   .about-info-section{
-      width:80%;
+      width:90%;
       margin:1rem
   }
   .about-header{
-      font-size:1.5rem;
+      width: 20rem;
   }
   .about-text{
       font-size:0.8rem;
-      padding-right:2rem;
+      width: 90%;
+      
    
   }
   .frame-3{
       display:flex;
+      width: 100vw;
+      max-width: 100vw;
       flex-direction:column;
       padding:1rem;
       align-items: center;
       justify-content: center;
   }
   .objectives-container{
+      width: 80%;
       padding:0;
       display:flex;
       flex-direction:column;
       align-items: center;
       justify-content: center;
-    width:100%;
   }
 
   .objectives-header{
-    margin-left:-5rem;
-    font-size:1.3rem;
+   width: 20rem;
+   margin-left: -5rem;
 }
 .objectives-card{
     margin:0.2rem;
 }
 
-.tokenomics-page{
-    width:100%;
+#tokenomics-page{
+    width: 80%;
     padding:1rem;
     display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+    flex-direction:column;
+   
 }
 
 .tokenomics-info-section{
     width:80%;
-    padding:1rem;
+    padding:2rem;
+    padding-right: 4rem;
 }
 .tokenomics-info-section h1{
     font-size:1.5rem;
@@ -380,7 +436,7 @@ display: none;
 
 
 .tokenomics-image{
-    width:80%;
+    width:100%;
     padding:0rem;
     display:flex;
     flex-direction:row;
@@ -394,6 +450,9 @@ display: none;
 .tokenomics-text:{
 
 }
+.tokenomics-header{
+width: 20rem;
+}
 
 .frame-4{
     /* background: url('ubuntuDAO.svg'), #620C0D; */
@@ -404,6 +463,7 @@ display: none;
    padding-left:0;
    align-items: center;
    justify-content: center;
+   width: 100%;
   
 }
 .frame-4 h1{
@@ -412,10 +472,21 @@ display: none;
     
 }
 
+
 .footer{
     display:flex;
     flex-direction:column;
     padding:1rem;
+}
+.footer-section-2{
+  
+    align-items:flex-start;
+    
+}
+
+
+.footer-section-3{
+    align-items: flex-start;
 }
 .footer-social p{
     margin:0.5rem
@@ -448,7 +519,8 @@ display: none;
     
 }
 .tokenomics-image-style{
-    height:20rem;
+    /* height:20rem; */
+    width: 20rem;
 }
 #promotion{
     margin-left:-3rem;
