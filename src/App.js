@@ -117,7 +117,7 @@ export const App  = () => {
         </div>
         {/* end of about page */}
 
-         {/* objectives page */}
+         {/* objectives scren page */}
         <div id="objectives-page" className="frame-3">
             
            
