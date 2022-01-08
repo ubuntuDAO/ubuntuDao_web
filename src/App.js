@@ -1,5 +1,5 @@
 import React from "react";
- import ReacrDOM from 'react-dom';
+ import ReactDOM from 'react-dom';
 import mystyles from './mystyles.module.css';
 import './App.css'
 //import './src/images';
@@ -232,11 +232,11 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
         <div id="footer-section" className="footer">
             <div className="footer-section-1">
                 <nav className="footer-social">
-                    <p>f</p>
-                    <p>f</p>
-                    <p>f</p>
-                    <p>f</p>
-                    <p>f</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                    <p>linkedin</p>
+                    <p>Discord</p>
+                
                 </nav>
                 <div className="footer-links">
                     <p>White Paper</p>

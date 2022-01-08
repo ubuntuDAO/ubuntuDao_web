@@ -386,6 +386,9 @@ color:rgba(53, 44, 44, 1)
     flex-direction:column;
     padding:1rem;
 }
+.footer-social p{
+    margin:0.5rem
+}
 
 .footer p{
     font-size:0.8rem
