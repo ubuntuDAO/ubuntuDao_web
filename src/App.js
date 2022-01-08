@@ -107,7 +107,7 @@ export const App  = () => {
                 <img  alt="info" src={UbuntuDAO} className="about-image-style"/>
              </div>
              <div className="about-info-section">
-                <img src={OverviewText} className="about-header"/>
+                <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
                 <p className="about-text">It is a Blockchain Project that leverages the simplicity and communal spirit associated with meme tokens to drive Blockchain adoption and very importantly, promote a creator-ecosystem (web3 Startups) in Africa. The movement has already begun; to transit Africa from a (sadly) default consumption tilt to becoming production conscious and the Ubuntu Dao Project further emphasizes the truth that Africans are innovative enough and we can change ‘our’ world and sure enough ‘the’ world.              </p>
             <a className="about-link"
@@ -121,7 +121,7 @@ export const App  = () => {
         <div id="objectives-page" className="frame-3">
             
            
-                <img src={ObjectivesText} className="objectives-header"/>
+                <img alt="overview" src={ObjectivesText} className="objectives-header"/>
               {/* objectives card */}
               <div className="objectives-container">
                <div className="objectives-card">
@@ -205,7 +205,7 @@ export const App  = () => {
             
              <div className="tokenomics-info-section">
              
-               <img src={TokenomicsText} className="tokenomics-header"/>
+               <img alt="tokrnomics" src={TokenomicsText} className="tokenomics-header"/>
                 <p className="tokenomics-text"><b>PRESALE</b><br/>
 16.6% (25 trn) of the total circulating supply will be allocated for Presale. Presale buyers would have the privilege of significantly larger proportions for the airdrop.<br/>
 
