@@ -11,7 +11,7 @@ import './App.css'
 // import Frame19 from "./Frame19.svg";
 // import Group10 from "./Group10.svg";
 // import Group11 from "./Group11.svg";
-// import Group12 from "./Group12.svg";
+// import Group12 from "./roup12.svg";
 import UbuntuDAO from "./images/ubuntu DAO.svg";
 import TokenomicsImage from "./images/tokenomics.svg";
 import Empowering from "./images/Empowering.svg";
