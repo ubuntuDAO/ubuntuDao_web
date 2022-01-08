@@ -49,7 +49,7 @@ export const App  = () => {
         >
             <div className="navigation-menu">
                 <div className="logo-container">
-                    <img src="/"/>
+                    <img  alt="info" src="/"/>
                 </div>
                 <div className="navigation-list">
                 <div className="nav-menu-bar"
@@ -58,11 +58,11 @@ export const App  = () => {
                     setMenu(!menu)
                 }}
                 >
-                    <img src={MenuBar}/>
+                    <img alt="info" src={MenuBar}/>
                 </div>
                     <p className="nav-link">Home</p>
                      <p className="nav-link">Overview</p>
-                      <p className="nav-link">Roadmap</p>
+                      <p className="nav-link">RoadMap</p>
                        <p className="nav-link">Booking</p>
                 </div>
             </div>
@@ -70,6 +70,7 @@ export const App  = () => {
                 <h1 className="welcome-header">UBUNTU DAO </h1>
                 <p className="welcome-text">Promoting Blockchain adoption and a creator ecosystem in africa </p>
                 <a
+                href="/"
                 className="welcome-button"
                 style={{
                      backgroundImage: "url(/welcomeButtonImage.svg)"
@@ -83,14 +84,14 @@ export const App  = () => {
         {/* about page */}
         <div id="about-page" className="frame-2">
             <div className="about-image">
-                <img src={UbuntuDAO} className="about-image-style"/>
+                <img  alt="info" src={UbuntuDAO} className="about-image-style"/>
              </div>
              <div className="about-info-section">
                 <h1 className="about-header">WHAT IS UBUNTU DAO?</h1>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
                 <p className="about-text">It is a Blockchain Project that leverages the simplicity and communal spirit associated with meme tokens to drive Blockchain adoption and very importantly, promote a creator-ecosystem (web3 Startups) in Africa. The movement has already begun; to transit Africa from a (sadly) default consumption tilt to becoming production conscious and the Ubuntu Dao Project further emphasizes the truth that Africans are innovative enough and we can change ‘our’ world and sure enough ‘the’ world.              </p>
             <a className="about-link"
-           
+           href="/"
             ><p>Read More</p></a>
              </div>   
         </div>
@@ -105,58 +106,58 @@ export const App  = () => {
               <div className="objectives-container">
                <div className="objectives-card">
                 <div className="objectives-innercard">
-                    <img src={Positioning}
+                    <img  alt="info" src={Positioning}
                     style={{
                        width:"17rem",
                        height:"30rem"
                    }}
                     />
                     {/* <div className="objectives-card-image">
-                    <img src="/"/>
+                    <img alt="info" alt="info" alt="info" src="/"/>
                     </div>
                     <h3 className="objectives-card-header">Positioning</h3>
-                    <p className="objectives-card-text">asfagmaerigm aigrimgaim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
+                    <p className="objectives-card-text">asfagmaerigm aigrimg alt="info" alt="info" alt="info"aim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
                 </div>
                </div>
                {/* end of objectives card */}
                {/* objectives card */}
                <div className="objectives-card">
                 <div className="objectives-innercard">
-                    <img src={Empowering}
+                    <img alt="info"  src={Empowering}
                     style={{
                        width:"16rem",
                        height:"30rem"
                    }}
                     />
                     {/* <div className="objectives-card-image">
-                    <img src="/"/>
+                    <img alt="info" alt="info" alt="info" src="/"/>
                     </div>
                     <h3 className="objectives-card-header">Positioning</h3>
-                    <p className="objectives-card-text">asfagmaerigm aigrimgaim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
+                    <p className="objectives-card-text">asfagmaerigm aigrimg alt="info" alt="info" alt="info"aim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
                 </div>
                </div>
                {/* end of objectives card */}
                {/* objectives card */}
                <div className="objectives-card">
                 <div className="objectives-innercard">
-                   <img src={Creativity}
+                   <img alt="info"  src={Creativity}
                    style={{
                        width:"15rem",
                        height:"30rem"
                    }}
                    />
                     {/* <div className="objectives-card-image">
-                    <img src="/"/>
+                    <img alt="info" alt="info" alt="info" src="/"/>
                     </div>
                     <h3 className="objectives-card-header">Positioning</h3>
-                    <p className="objectives-card-text">asfagmaerigm aigrimgaim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
+                    <p className="objectives-card-text">asfagmaerigm aigrimg alt="info" alt="info" alt="info"aim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
                 </div>
                </div>
                {/* end of objectives card */}
                {/* objectives card */}
                <div className="objectives-card">
                 <div className="objectives-innercard">
-                   <img src={Promotion}
+                   <img alt="info"  src={Promotion}
                    id="promotion"
                    style={{
                        width:"18rem",
@@ -164,10 +165,10 @@ export const App  = () => {
                    }}
                    />
                     {/* <div className="objectives-card-image">
-                    <img src="/"/>
+                    <img alt="info" alt="info" alt="info" src="/"/>
                     </div>
                     <h3 className="objectives-card-header">Positioning</h3>
-                    <p className="objectives-card-text">asfagmaerigm aigrimgaim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
+                    <p className="objectives-card-text">asfagmaerigm aigrimg alt="info" alt="info" alt="info"aim agirngpiarpi iangipirnpiang gairngiprangirn </p> */}
                 </div>
                </div>
                {/* end of objectivecard */}
@@ -185,16 +186,16 @@ export const App  = () => {
              <div className="tokenomics-info-section">
                 <h1 className="tokenomics-header">WHAT IS UBUNTU DAO?</h1>
                
-                <p className="tokenomics-text">PRESALE
-16.6% (25 trn) of the total circulating supply will be allocated for Presale. Presale buyers would have the privilege of significantly larger proportions for the airdrop.  
+                <p className="tokenomics-text"><b>PRESALE</b><br/>
+16.6% (25 trn) of the total circulating supply will be allocated for Presale. Presale buyers would have the privilege of significantly larger proportions for the airdrop.<br/>
 
-AIR DROP
+<b>AIR DROP</b><br/>
 In expressing our support for the Wakanda Inu Project, Ubuntu Dao tokens will be airdropped to all Wakanda Inu holders across supported wallets.  
 The Ubuntu Dao Airdrop will be deposited in three installments. As earlier stated, the first snapshot will be taken on Wakanda holders with 50% allocated Ubuntu tokens airdropped during the TGE. The other 50% will be airdropped at a 1:1 ratio on Ubuntu token holders in two installments.   </p>
              
              </div>  
              <div className="tokenomics-image">
-                <img 
+                <img alt="info" 
                className="tokenomics-image-style" 
                 src={TokenomicsImage}/>
              </div> 
@@ -210,10 +211,10 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
             >
                 <h1 className="token-distribution-header">Token Distribution</h1>
                 <div className="token-distribution-image">
-                    <img
+                    <img alt="info" 
                     className="token-distribution-image-style"
                      src={TokenDistribution}/>
-                      <img src={MobileDistribution}
+                      <img alt="info" src={MobileDistribution}
                          className="mobile-distribution-image-style"
                     style={{
                         width:'10rem'
@@ -222,13 +223,13 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                 </div>
                 <h1 id="token-roadmap-header">UBUNTU ROADMAP</h1>
                 <div className="token-roadmap-image">
-              <img src={MobileRoadmap}
+              <img alt="info"  src={MobileRoadmap}
                          className="mobile-roadmap-image-style"
                     style={{
                         width:'10rem'
                     }}
                     />
-                    <img src={Roadmap}
+                    <img alt="info"  src={Roadmap}
                          className="token-roadmap-image-style"
                     style={{
                         width:'95rem'
@@ -275,16 +276,16 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
     //   >
         
         // {/* <div className="frame-1"> */}
-        //   {/* <img src={Frame} className="App-Frame" alt="Frame" /> */}
+        //   {/* <img alt="info" alt="info" src={Frame} className="App-Frame" alt="Frame" /> */}
         //   {
               /* <div className="frame-1-5">
             <div className="frame-1-4">
-              <img src="" />
+              <img alt="info" alt="info" src="" />
             </div>
           </div>
           
           <div className="frame-1-7">
-            <img src="" />
+            <img alt="info" alt="info" src="" />
             <div className="ellipse-1" />
             <div className="frame-1-0" />
             <div className="frame-1-1" />
@@ -295,18 +296,18 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
           
           <div className="frame-1-8">
             <div className="frame-4">
-              <img src={Group} className="App-Group" alt="Group" />
+              <img alt="info" alt="info" src={Group} className="App-Group" alt="Group" />
               <div className="ellipse-3-4" />
             </div>
             <div className="frame-5">
-              <img src=""/>
+              <img alt="info" alt="info" src=""/>
               <div className="ellipse-3-4" />
             </div>
             
             <div className="component-6">
               <div className="component-6">
                 <div className="rectangle-7" />
-                 <img src={Group11} className="App-Group11" alt="Group11" />
+                 <img alt="info" alt="info" src={Group11} className="App-Group11" alt="Group11" />
               </div>
             </div>
             
@@ -315,12 +316,12 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
           
         </div>
         <div className="frame-6">
-          <img src="" />
+          <img alt="info" alt="info" src="" />
           <div className="ellipse-3-4" />
         </div>
        
         <div className="frame-6">
-          <img src="" />
+          <img alt="info" alt="info" src="" />
           <div className="ellipse-3-4" />
         </div>
         <div className="frame-7">
@@ -332,13 +333,13 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
           </div>
         </div>
         <div className="component-1">
-          <img src={Group12} className="App-Group12" alt="Group12" />
+          <img alt="info" alt="info" src={Group12} className="App-Group12" alt="Group12" />
         </div>
    
-        <img src="" />
-        <img src="" />
+        <img alt="info" alt="info" src="" />
+        <img alt="info" alt="info" src="" />
         <div className="rectangle-4" />
-        <img src="" />
+        <img alt="info" alt="info" src="" />
         <div className="frame-2">
           <div className="ellipse-2" />
           <div className="ellipse-3" />
@@ -351,7 +352,7 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
        
       
         <div className="group-3">
-        <img src={Group10} className="App-Group10" alt="Group10"/>
+        <img alt="info" alt="info" src={Group10} className="App-Group10" alt="Group10"/>
       
         </div>
      

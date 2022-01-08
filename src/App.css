@@ -55,8 +55,8 @@
    
 }
 .welcome-text{
-    font-size:1.2rem;
-    width:50%;
+    font-size:18px;
+    width:40%;
 }
 .welcome-button{
     border-width:0.1rem;
@@ -69,10 +69,12 @@
     border-style:solid;
     width: 10rem;
 height: 4rem;
+color: #ffffff;
 
 }
 .welcome-button p{
     font-size:18px;
+    color: #ffffff;
 }
 
 .frame-2{
@@ -111,6 +113,7 @@ color:rgba(53, 44, 44, 1)
     justify-content:center;
     align-items:center;
     border-style:solid;
+    color: #000000;
 }
 
 .frame-3{
@@ -201,7 +204,7 @@ color:rgba(53, 44, 44, 1)
 }
 
 .footer{
-    height:384px;
+    height:300px;
     display:flex;
     flex-direction: row;
     padding:5rem;
@@ -209,13 +212,14 @@ color:rgba(53, 44, 44, 1)
 
 .footer p{
     font-size:1.2rem;
+    color:#620C0D;
 }
 .footer-social{
     display:flex;
     flex-direction: row;
 }
 .footer-social p{
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .footer-section-1{
     width:30%;
