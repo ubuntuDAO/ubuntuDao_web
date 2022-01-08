@@ -1,17 +1,17 @@
-import React from "react";
- import ReactDOM from 'react-dom';
-import mystyles from './mystyles.module.css';
+import React, { useState } from "react";
+//  import ReactDOM from 'react-dom';
+// import mystyles from './mystyles.module.css';
 import './App.css'
-//import './src/images';
-import Frame from "./Frame.svg";
-import Group from "./Group.svg";
-import Group5 from "./Group5.svg";
-import Group6 from "./Group6.svg";
-import Group7 from "./Group7.svg";
-import Frame19 from "./Frame19.svg";
-import Group10 from "./Group10.svg";
-import Group11 from "./Group11.svg";
-import Group12 from "./Group12.svg";
+// import './src/images';
+// import Frame from "./Frame.svg";
+// import Group from "./Group.svg";
+// import Group5 from "./Group5.svg";
+// import Group6 from "./Group6.svg";
+// import Group7 from "./Group7.svg";
+// import Frame19 from "./Frame19.svg";
+// import Group10 from "./Group10.svg";
+// import Group11 from "./Group11.svg";
+// import Group12 from "./Group12.svg";
 import UbuntuDAO from "./images/ubuntu DAO.svg";
 import TokenomicsImage from "./images/tokenomics.svg";
 import Empowering from "./images/Empowering.svg";
@@ -22,10 +22,12 @@ import MobileRoadmap from './images/mobileRoadmap.svg'
 import MobileDistribution from './images/mobileDistribution.svg'
 import TokenDistribution from './images/tokenDistributionImage.svg'
 import Roadmap from './images/Roadmap.svg'
-import {useMediaQuery} from "react-responsive";
-import { mediaQueries } from "./responsive";
+import MenuBar from './images/menubar.svg'
+
+// import {useMediaQuery} from "react-responsive";
+// import { mediaQueries } from "./responsive";
 export const App  = () => {
- 
+ const [menu, setMenu] = useState(false)
   
 
 //   const isDesktop = useMediaQuery({query: mediaQueries.desktopQuery})
@@ -50,6 +52,14 @@ export const App  = () => {
                     <img src="/"/>
                 </div>
                 <div className="navigation-list">
+                <div className="nav-menu-bar"
+                
+                onClick={()=>{
+                    setMenu(!menu)
+                }}
+                >
+                    <img src={MenuBar}/>
+                </div>
                     <p className="nav-link">Home</p>
                      <p className="nav-link">Overview</p>
                       <p className="nav-link">Roadmap</p>

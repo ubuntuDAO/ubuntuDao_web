@@ -49,6 +49,11 @@
     width:50%;
     
 }
+.nav-menu-bar{
+    display: none;
+    visibility: invisible;
+   
+}
 .welcome-text{
     font-size:1.2rem;
     width:50%;
@@ -261,12 +266,22 @@ color:rgba(53, 44, 44, 1)
     top: 0px;
     flex-direction:row;
      width:10%;
-     margin-left:1rem;
+     padding-left:12rem;
+     align-items: flex-end;
+     justify-content: flex-end;
 }
 .nav-link{
-
+display: none;
+    visibility: invisible;
     margin:0.2rem;
     font-size:0.7rem;
+}
+.nav-menu-bar{
+    display: flex;
+    visibility: visible;
+    right: 0;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
  .logo-container{
      padding-left:1rem;
