@@ -2,6 +2,7 @@ import React, { useState } from "react";
 //  import ReactDOM from 'react-dom';
 // import mystyles from './mystyles.module.css';
 import './App.css'
+
 // import './src/images';
 // import Frame from "./Frame.svg";
 // import Group from "./Group.svg";
@@ -30,6 +31,11 @@ import MobileDistribution from './images/mobileDistribution.svg'
 import TokenDistribution from './images/tokenDistributionImage.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
+
+import TypewriterComponent from 'typewriter-effect'
+// import Link from 'next/link'
+import 'animate.css/animate.min.css'
+import {AnimationOnScroll} from 'react-animation-on-scroll' 
 
 // import {useMediaQuery} from "react-responsive";
 // import { mediaQueries } from "./responsive";
@@ -123,7 +129,30 @@ export const App  = () => {
                 </div>
             </div>
             <div className="welcome-section">
-                <h1 className="welcome-header">UBUNTU DAO </h1>
+                <h1 className="welcome-header">
+                <TypewriterComponent
+                                  
+                                      
+                                                onInit={(typewriter) => {
+                                                    typewriter.typeString('UBUNTU DAO')
+                                                    
+                                                    .callFunction(() => {
+                                                        console.log('String typed out!');
+                                                    })
+                                                    .pauseFor(2500)
+                                                    .callFunction(() => {
+                                                        console.log('All strings were deleted');
+                                                    })
+                                                    .start();
+                                                    
+                                                }}
+                                                options={{
+                                                    devMode:false,
+                                                   autoStart: true,
+                                                    wrapperClassName:"welcome-header"
+                                                }}
+                                                />
+                 </h1>
                 <p className="welcome-text">Promoting Blockchain adoption and a creator ecosystem in africa </p>
                 <a
                 href="/"
@@ -149,9 +178,10 @@ export const App  = () => {
         {/* end of welcome page */}
         {/* about page */}
         <div id="about-page" className="frame-2">
-            <div className="about-image">
+            <AnimationOnScroll animateIn="animate__slideInLeft" className="about-image">
+        
                 <img  alt="info" src={UbuntuDAO} className="about-image-style"/>
-             </div>
+             </AnimationOnScroll>
              <div className="about-info-section">
                 <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
@@ -169,7 +199,7 @@ export const App  = () => {
            
                 <img alt="overview" src={ObjectivesText} className="objectives-header"/>
               {/* objectives card */}
-              <div className="objectives-container">
+              <AnimationOnScroll animateIn="animate__slideInUp"  className="objectives-container">
                <div className="objectives-card">
                 <div className="objectives-innercard">
                     <img  alt="info" src={Positioning}
@@ -238,7 +268,7 @@ export const App  = () => {
                 </div>
                </div>
                {/* end of objectivecard */}
-               </div>
+               </AnimationOnScroll>
              
            
              
@@ -260,11 +290,11 @@ In expressing our support for the Wakanda Inu Project, Ubuntu Dao tokens will be
 The Ubuntu Dao Airdrop will be deposited in three installments. As earlier stated, the first snapshot will be taken on Wakanda holders with 50% allocated Ubuntu tokens airdropped during the TGE. The other 50% will be airdropped at a 1:1 ratio on Ubuntu token holders in two installments.   </p>
              
              </div>  
-             <div className="tokenomics-image">
+             <AnimationOnScroll animateIn="animate__slideInRight"  className="tokenomics-image">
                 <img alt="info" 
                className="tokenomics-image-style" 
                 src={TokenomicsImage}/>
-             </div> 
+             </AnimationOnScroll> 
         </div>
         {/* end of tokenomics page */}
         {/* token distribution page */}

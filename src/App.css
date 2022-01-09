@@ -305,7 +305,7 @@ color:rgba(53, 44, 44, 1)
  
 /* responsiveness */
 
-@media (min-width:240px) and (max-width: 600px) {
+@media (min-width:240px) and (max-width: 900px) {
   .main-body{
     overflow-x: hidden;
      margin:0 auto;
@@ -348,7 +348,7 @@ display: none;
     display: flex;
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 2.5rem;
     visibility: visible;
     
     justify-self: flex-end;
