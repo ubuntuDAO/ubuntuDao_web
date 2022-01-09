@@ -31,6 +31,7 @@ import MobileDistribution from './images/mobileDistribution.svg'
 import TokenDistribution from './images/tokenDistributionImage.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
+import UbuntuLogo from './images/UBUNTU LOGO 2.png'
 
 import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
@@ -97,7 +98,7 @@ export const App  = () => {
     <div className="main-body">
     {/* welcome page */}
         <div id="welcome-page" className="frame-1"
-     
+            
         >
         <div className="welcome-container"
         style={{
@@ -106,7 +107,7 @@ export const App  = () => {
         >
             <div className="navigation-menu">
                 <div className="logo-container">
-                    <img  alt="info" src="/"/>
+                    <img  alt="info" src={UbuntuLogo} className="logo-style"/>
                 </div>
                 <div className="navigation-list">
                 {

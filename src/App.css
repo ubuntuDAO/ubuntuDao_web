@@ -14,6 +14,11 @@ a{
 .sidebar-panel-navigation{
     margin-top: 5rem;
 }
+.logo-style{
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
 .sidebar-panel-navigation a{
     text-decoration: none;
     color: #ffffff;
@@ -43,8 +48,10 @@ a{
 
 }
 .logo-container{
+    /* display: none;
+    visibility: hidden; */
      width:50%;
-     padding-left:6rem;
+     padding-left:2rem;
 }
 .navigation-list{
     padding-left: 6rem;
@@ -328,6 +335,13 @@ color:rgba(53, 44, 44, 1)
     padding-top:0.8rem;
 
 }
+
+.logo-style{
+    margin-top: 0;
+    width: 3rem;
+    height: 3rem;
+}
+
 .navigation-list{
     display:flex;
     top: 0px;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe5e8eff.css",
-    "main.js": "/static/js/main.bd19807a.js",
+    "main.css": "/static/css/main.1db07e37.css",
+    "main.js": "/static/js/main.3d04bf17.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/Empowering.svg": "/static/media/Empowering.46c166aeeb19ecc07361782d9ec9783f.svg",
     "static/media/Promotion.svg": "/static/media/Promotion.57ec2216700e3eddc363eaf81edd164d.svg",
@@ -11,6 +11,7 @@
     "static/media/Positioning.svg": "/static/media/Positioning.ec84027fd94078776c140c02de5bc76b.svg",
     "static/media/ubuntu DAO.svg": "/static/media/ubuntu DAO.c53446e701d8195ca7e66867ea5b4551.svg",
     "static/media/tokenomics.svg": "/static/media/tokenomics.e5e7eb7810e65ff14870cb91714b6638.svg",
+    "static/media/UBUNTU LOGO 2.png": "/static/media/UBUNTU LOGO 2.5da88d6e004e9652ee05.png",
     "static/media/mobileDistribution.svg": "/static/media/mobileDistribution.96960f6699c941ac133e827fe576d2ba.svg",
     "static/media/tokenDistributionImage.svg": "/static/media/tokenDistributionImage.fb9bc3d6866c1d4014e9162b17d6d2cc.svg",
     "static/media/ObjectivesText.svg": "/static/media/ObjectivesText.8023e38ad4f7929908fe0e77c3290cee.svg",
@@ -22,12 +23,12 @@
     "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.af57751133f6964329da20b61b94abce.svg",
     "static/media/menubar.svg": "/static/media/menubar.27dadae1c3a52787908cf181d81bc6d3.svg",
-    "main.fe5e8eff.css.map": "/static/css/main.fe5e8eff.css.map",
-    "main.bd19807a.js.map": "/static/js/main.bd19807a.js.map",
+    "main.1db07e37.css.map": "/static/css/main.1db07e37.css.map",
+    "main.3d04bf17.js.map": "/static/js/main.3d04bf17.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe5e8eff.css",
-    "static/js/main.bd19807a.js"
+    "static/css/main.1db07e37.css",
+    "static/js/main.3d04bf17.js"
   ]
 }
