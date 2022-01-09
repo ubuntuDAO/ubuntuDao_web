@@ -174,7 +174,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                     <img  alt="info" src={Positioning}
                     style={{
-                       width:"20rem",
+                       width:"18rem",
                        height:"30rem"
                    }}
                     />
@@ -191,7 +191,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                     <img alt="info"  src={Empowering}
                     style={{
-                       width:"20rem",
+                       width:"18rem",
                        height:"30rem"
                    }}
                     />
@@ -208,7 +208,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                    <img alt="info"  src={Creativity}
                    style={{
-                       width:"18rem",
+                       width:"15rem",
                        height:"30rem"
                    }}
                    />
@@ -226,7 +226,7 @@ export const App  = () => {
                    <img alt="info"  src={Promotion}
                    id="promotion"
                    style={{
-                       width:"23rem",
+                       width:"20rem",
                        height:"30rem"
                    }}
                    />

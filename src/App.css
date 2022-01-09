@@ -107,7 +107,7 @@ color: #ffffff;
 }
 
 .frame-2{
-    padding: 6rem;
+    padding: 2rem;
     display:flex;
     flex-direction: row;
     width:100%;
@@ -115,7 +115,11 @@ color: #ffffff;
     justify-content: center;
 }
 .about-image{
-    width:40%
+    width:40%;
+     align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-right: 2rem;
 }
 .about-info-section{
     width:40%;
@@ -175,7 +179,7 @@ color: #ffffff;
 }
 
 .objectives-card{
-    margin:0.8rem;
+    margin:0rem;
 }
 
 #tokenomics-page{
@@ -399,7 +403,7 @@ display: flex;
   }
   .about-image-style{
       width:20rem;
-      margin-left: 2rem;
+      margin-right: 2rem;
       align-self: center;
       justify-self: center
   }
