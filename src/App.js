@@ -36,6 +36,47 @@ import MenuBar from './images/menubar.svg'
 export const App  = () => {
  const [menu, setMenu] = useState(false)
   
+ const renderMenu = () => {
+        if (menu) {
+            return (
+                <div className="sidebar" style={{
+                    display: "flex",
+                    position: "fixed",
+                    width:"80vw",
+                    height:"100vh",
+                    top:"0",
+                    bottom:"0",
+                    left:"0",
+                    backgroundColor:"#620C0D",
+                    color:"#ffffff"
+                    
+                }}>
+                    <div className="sidebar-backdrop"></div>
+
+                    <div name="slide-bar">
+
+                        <div className="sidebar-panel-container">
+                            {/* <div className="top-0 right-0 text-2xl text-white" onClick={()=>{
+                                setMenu(!menu)
+                            }}><p>Close</p></div> */}
+                            <ul className="sidebar-panel-navigation" style={{ listStyle: "none" }}>
+
+                                <li><a href="#welcome-page" className="lope">Home</a></li>
+                                <li><a href="#about-page" className="lope">Overview</a></li>
+                                <li><a href="#roadmap" className="lope">Roadmap</a></li>
+                                <li><a href="#footer-section" className="lope">Booking</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            )
+        } else {
+            return null
+        }
+    }
+
+
 
 //   const isDesktop = useMediaQuery({query: mediaQueries.desktopQuery})
 //   const mystyle = {
@@ -62,18 +103,23 @@ export const App  = () => {
                     <img  alt="info" src="/"/>
                 </div>
                 <div className="navigation-list">
+                {
+                                renderMenu()
+                            }
+
                 <div className="nav-menu-bar"
                 
                 onClick={()=>{
+                  
                     setMenu(!menu)
                 }}
                 >
                     <img alt="info" src={MenuBar}/>
                 </div>
-                    <p className="nav-link">Home</p>
-                     <p className="nav-link">Overview</p>
-                      <p className="nav-link">RoadMap</p>
-                       <p className="nav-link">Booking</p>
+                    <a href="#welcome-page" className="nav-link"><p >Home</p></a>
+                    <a href="#about-page" className="nav-link"> <p >Overview</p></a>
+                     <a href="#roadmap" className="nav-link"> <p >RoadMap</p></a>
+                       <a href="#footer-section" className="nav-link"><p>Booking</p></a>
                 </div>
             </div>
             <div className="welcome-section">
@@ -94,7 +140,7 @@ export const App  = () => {
             <div    
                 className="second-section"
                 style={{
-                     backgroundImage: "url(/SecondHalfHomePage.svg)"
+                     backgroundImage: "url(/SecondHalfHomePage-2.svg)"
                 }}
                 >
             <p></p>
@@ -128,7 +174,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                     <img  alt="info" src={Positioning}
                     style={{
-                       width:"17rem",
+                       width:"20rem",
                        height:"30rem"
                    }}
                     />
@@ -145,7 +191,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                     <img alt="info"  src={Empowering}
                     style={{
-                       width:"16rem",
+                       width:"20rem",
                        height:"30rem"
                    }}
                     />
@@ -162,7 +208,7 @@ export const App  = () => {
                 <div className="objectives-innercard">
                    <img alt="info"  src={Creativity}
                    style={{
-                       width:"15rem",
+                       width:"18rem",
                        height:"30rem"
                    }}
                    />
@@ -180,7 +226,7 @@ export const App  = () => {
                    <img alt="info"  src={Promotion}
                    id="promotion"
                    style={{
-                       width:"18rem",
+                       width:"23rem",
                        height:"30rem"
                    }}
                    />
@@ -249,7 +295,7 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                         width:'20rem'
                     }}
                     />
-                    <img alt="info"  src={Roadmap}
+                    <img id="roadmap" alt="info"  src={Roadmap}
                          className="token-roadmap-image-style"
                     style={{
                         width:'95rem'
@@ -278,10 +324,10 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                 
                 </nav>
                 <div className="footer-links">
-                    <p>White Paper</p>
-                    <p>Token</p>
-                    <p>Roadmap</p>
-                    <p>Contact Us</p>
+                    <a href="/"><p>White Paper</p></a>
+                    <a href="/"><p>Token</p></a>
+                    <a href="/"><p>Roadmap</p></a>
+                    <a href="/"><p>Contact Us</p></a>
                    
                 </div>
             </div>
@@ -289,9 +335,8 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                 <p>&copy; Ubuntu Dao </p>
             </div>
             <div className="footer-section-3">
-            <p>+2347013395472
-</p>
-            <p>info@Ubuntudao.com </p>
+            <a href="/"><p>+2347013395472</p></a>
+            <a href="/"><p>info@Ubuntudao.com </p></a>
             </div>
         </div>
         {/* end of footer */}
