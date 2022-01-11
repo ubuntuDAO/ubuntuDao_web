@@ -13,7 +13,7 @@ import './App.css'
 // import Group10 from "./Group10.svg";
 // import Group11 from "./Group11.svg";
 // import Group12 from "./roup12.svg";
-import UbuntuDAO from "./images/ubuntu DAO.svg";
+// import UbuntuDAO from "./images/ubuntu DAO.svg";
 import TokenomicsImage from "./images/tokenomics.svg";
 import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
@@ -28,11 +28,11 @@ import CommunityDriven from "./images/Community driven.svg";
 import Instagram from "./images/instagram.svg";
 import Twitter from "./images/twitter.svg";
 import OverviewText from "./images/OverviewText.svg";
-import ObjectivesText from './images/ObjectivesText.svg';
+// import ObjectivesText from './images/ObjectivesText.svg';
 import TokenomicsText from './images/TokenomicsText.svg';
 import MobileRoadmap from './images/mobileRoadmap.svg'
-import MobileDistribution from './images/mobileDistribution.svg'
-import TokenDistribution from './images/tokenDistributionImage.svg'
+// import MobileDistribution from './images/mobileDistribution.svg'
+// import TokenDistribution from './images/tokenDistributionImage.svg'
 import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
@@ -204,12 +204,12 @@ export const App  = () => {
              
               <AnimationOnScroll animateIn="animate__slideInRight" className="about-mission">
                 <div className="about-card">
-                    <img src={Vision} />
+                    <img src={Vision} alt="vision" />
                     <h3>OUR VISION</h3>
                     <p>To accelerate the attainment of a thriving Blockchain Ecosystem in Africa, powered by innovation, far-reaching adoption and collaboration. </p>
                 </div>
                  <div className="about-card">
-                    <img src={Mission}/>
+                    <img src={Mission} alt="mission"/>
                     <h3>OUR MISSION</h3>
                     <p>Building an ecosystem that fosters unity, patriotism and citizen-driven development through the decentralized economy.   </p>
                 </div>
