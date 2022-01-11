@@ -21,6 +21,10 @@ import Positioning from "./images/Positioning.svg";
 import Promotion from "./images/Promotion.svg";
 import Telegram from "./images/telegram.svg";
 import Facebook from "./images/facebook.svg";
+import Mission from "./images/mission.svg";
+import Vision from "./images/vision.svg";
+import Transparency from "./images/Transparency.svg";
+import CommunityDriven from "./images/Community driven.svg";
 import Instagram from "./images/instagram.svg";
 import Twitter from "./images/twitter.svg";
 import OverviewText from "./images/OverviewText.svg";
@@ -29,9 +33,15 @@ import TokenomicsText from './images/TokenomicsText.svg';
 import MobileRoadmap from './images/mobileRoadmap.svg'
 import MobileDistribution from './images/mobileDistribution.svg'
 import TokenDistribution from './images/tokenDistributionImage.svg'
+import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
-import UbuntuLogo from './images/UBUNTU LOGO 2.png'
+import UbuntuLogo from './images/ubuntuMainLogo.svg'
+import PoocoinsLogo from './images/PoocoinsLogo.svg'
+import BinanceLogo from './images/BinanceLogo.svg'
+import CoinMarketCapLogo from './images/CoinMarketCapLogo.svg'
+import CoinGeckoLogo from './images/coingecko-logo-white-3f2aeb48e13428b7199395259dbb96280bf47ea05b2940ef7d3e87c61e4d8408 1.svg'
+import TokenHeaderImage from './images/headerImage.svg'
 
 import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
@@ -46,7 +56,7 @@ export const App  = () => {
  const renderMenu = () => {
         if (menu) {
             return (
-                <div className="sidebar" style={{
+                <AnimationOnScroll animateIn="animate__slideInLeft" className="sidebar" style={{
                     display: "flex",
                     position: "fixed",
                     width:"80vw",
@@ -76,7 +86,7 @@ export const App  = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </AnimationOnScroll>
             )
         } else {
             return null
@@ -102,7 +112,10 @@ export const App  = () => {
         >
         <div className="welcome-container"
         style={{
-            backgroundImage: "url(/homeImageFirstHalf.svg)"
+            backgroundImage: "url(/homeSVG.svg)",
+             "backgroundRepeat": "no-repeat",
+ " backgroundAttachment": "fixed",
+  "backgroundSize":" cover"
         }}
         >
             <div className="navigation-menu">
@@ -179,10 +192,7 @@ export const App  = () => {
         {/* end of welcome page */}
         {/* about page */}
         <div id="about-page" className="frame-2">
-            <AnimationOnScroll animateIn="animate__slideInLeft" className="about-image">
-        
-                <img  alt="info" src={UbuntuDAO} className="about-image-style"/>
-             </AnimationOnScroll>
+           
              <div className="about-info-section">
                 <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
@@ -190,15 +200,51 @@ export const App  = () => {
             <a className="about-link"
            href="/"
             ><p>Read More</p></a>
-             </div>   
+             </div>
+             
+              <AnimationOnScroll animateIn="animate__slideInRight" className="about-mission">
+                <div className="about-card">
+                    <img src={Vision} />
+                    <h3>OUR VISION</h3>
+                    <p>To accelerate the attainment of a thriving Blockchain Ecosystem in Africa, powered by innovation, far-reaching adoption and collaboration. </p>
+                </div>
+                 <div className="about-card">
+                    <img src={Mission}/>
+                    <h3>OUR MISSION</h3>
+                    <p>Building an ecosystem that fosters unity, patriotism and citizen-driven development through the decentralized economy.   </p>
+                </div>
+             </AnimationOnScroll>   
         </div>
         {/* end of about page */}
 
+        {/* about image */}
+<AnimationOnScroll animateIn="animate__slideInUp" className="about-image-container">
+                
+                <img  alt="info" src={CommunityDriven} className="about-image-style"/>
+                <img  alt="info" src={Transparency} className="about-image-style"/>
+             </AnimationOnScroll>  
+        {/* end of about image */}
+        {/* Partners Section */}
+
+
+       
+        <div className="partners-page">
+        <h1>Our Partners</h1>
+        <div className="partners-section">
+                <img  alt="info" src={CoinGeckoLogo} className="partners-image-style"/>
+                <img  alt="info" src={CoinMarketCapLogo} className="partners-image-style"/>
+                <img  alt="info" src={BinanceLogo} className="partners-image-style"/>
+                <img  alt="info" src={PoocoinsLogo} className="partners-image-style"/>
+        </div>
+
+        </div>
+         {/* end of partners section */}
+
          {/* objectives scren page */}
         <div id="objectives-page" className="frame-3">
-            
+            <h1 className="objectives-header">OUR OBJECTIVES</h1>
            
-                <img alt="overview" src={ObjectivesText} className="objectives-header"/>
+                {/* <img alt="overview" src={ObjectivesText} className="objectives-header"/> */}
               {/* objectives card */}
               <AnimationOnScroll animateIn="animate__slideInUp"  className="objectives-container">
                <div className="objectives-card">
@@ -283,13 +329,9 @@ export const App  = () => {
              <div className="tokenomics-info-section">
              
                <img alt="tokrnomics" src={TokenomicsText} className="tokenomics-header"/>
-                <p className="tokenomics-text"><b>PRESALE</b><br/>
-16.6% (25 trn) of the total circulating supply will be allocated for Presale. Presale buyers would have the privilege of significantly larger proportions for the airdrop.<br/>
-
-<b>AIR DROP</b><br/>
-In expressing our support for the Wakanda Inu Project, Ubuntu Dao tokens will be airdropped to all Wakanda Inu holders across supported wallets.  
-The Ubuntu Dao Airdrop will be deposited in three installments. As earlier stated, the first snapshot will be taken on Wakanda holders with 50% allocated Ubuntu tokens airdropped during the TGE. The other 50% will be airdropped at a 1:1 ratio on Ubuntu token holders in two installments.   </p>
-             
+                <img alt="info" 
+                    className="tokenomics-image-style"
+                     src={TokenomicsDistribution}/>
              </div>  
              <AnimationOnScroll animateIn="animate__slideInRight"  className="tokenomics-image">
                 <img alt="info" 
@@ -306,17 +348,37 @@ The Ubuntu Dao Airdrop will be deposited in three installments. As earlier state
                      backgroundImage: "url(/tokenDistributionBackgroundImage.svg)"
                 }}
             >
-                <h1 className="token-distribution-header">Token Distribution</h1>
-                <div className="token-distribution-image">
-                    <img alt="info" 
-                    className="token-distribution-image-style"
-                     src={TokenDistribution}/>
-                      <img alt="info" src={MobileDistribution}
-                         className="mobile-distribution-image-style"
-                    style={{
-                        width:'20rem'
-                    }}
-                    />
+            <img alt="info" 
+               className="token-distribution-header-image-style" 
+                src={TokenHeaderImage}/>
+                <h1 className="token-distribution-header">Our Projects</h1>
+                <div className="project-container">
+                    <div className="project-card">
+                        <h3>UBUNTU FOUNDATION</h3>
+                        <p>Text</p>
+                    </div>
+                    <div className="project-card">
+<h3>UBUNTU CAPITAL</h3>
+                        <p>venture fund for blockchain startups</p>
+                    </div>
+                    <div className="project-card">
+<h3>MADE IN AFRICA E-COMMERCE STORE</h3>
+                        <p>Inventory Management, Originality and supply powered by nFTs</p>
+                    </div>
+                </div>
+                <div className="project-container">
+                    <div className="project-card">
+<h3>MEDIA COMMUNICATIONS</h3>
+                        <p>We would setup a media communicarions platform and also collaborate with different existing media platforms focused on blockchain technology to promote the afrocentric narratives and stamp africa’s relevance in the global blockchain space </p>
+                    </div>
+                    <div className="project-card">
+<h3>AFRICAS BLOCKCHAIN DEVELOPERS INSTITUTE</h3>
+                        <p>Text</p>
+                    </div>
+                    <div className="project-card">
+<h3>UBUNTU FOUNDATION</h3>
+                        <p>Text</p>
+                    </div>
                 </div>
                 <h1 id="token-roadmap-header">UBUNTU ROADMAP</h1>
                 <div className="token-roadmap-image">

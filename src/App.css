@@ -11,6 +11,9 @@
 a{
     text-decoration: none;
 }
+p{
+    font-size: 13px;
+}
 .sidebar-panel-navigation{
     margin-top: 5rem;
 }
@@ -72,11 +75,11 @@ a{
     padding: 6rem;
 }
 .welcome-container{
-    width: 50%;
+    width: 90%;
     height: 100%;
 }
 .second-section{
-    width: 50%;
+    width: 10%;
     height: 100%;
     
 }
@@ -129,7 +132,7 @@ color: #ffffff;
     margin-right: 2rem;
 }
 .about-info-section{
-    width:40%;
+    width:50%;
     padding-top:5rem;
 }
 .about-header{
@@ -157,6 +160,71 @@ color: #ffffff;
     color: #000000;
 }
 
+.about-mission{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.about-card{
+    width: 214px;
+    margin: 1rem;
+}
+
+.about-card h3{
+    color: #620C0D ;
+    font-size: 24px;
+    
+}
+.about-card p{
+    color: #000000 ;
+    font-size: 13px;
+    
+}
+
+.partners-page{
+    padding: 6rem;
+    background-color: #620C0D;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 325px;
+
+}
+
+ .about-image-container{
+      padding: 6rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .about-image-style{
+      width: 35rem;
+  }
+
+.tokenomics-distribution-image-style{
+
+}
+
+.partners-page h1{
+    color: #fff;
+    font-size: 36px;
+}
+
+.partners-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.partners-section img{
+    margin: 1rem;
+    width: 15rem;
+}
+
 .frame-3{
     width: 100%;
     display:flex;
@@ -168,9 +236,10 @@ color: #ffffff;
 
 .objectives-header{
     display: flex;
-    width: 40rem;
+    font-size: 36px;
     align-self: center;
-    color:rgba(53, 44, 44, 1)
+    text-align: center;
+    color: #620C0D;
 }
 
 
@@ -192,25 +261,30 @@ color: #ffffff;
 #tokenomics-page{
     width:100%;
     padding-top: 2rem;
-    padding:6rem;
+    padding:3rem;
     display:flex;
     flex-direction:row;
    
 }
 
 .tokenomics-info-section{
-    width:35%;
+    width:50%;
     padding-top:5rem;
     display: flex;
     flex-direction: column;
 }
 
 .tokenomics-image{
-    width:40%;
-    padding:5rem;
+    width:50%;
+    padding:2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 12rem;
 }
 .tokenomics-image-style{
     width: 35rem;
+    height: 30rem;
 }
 .tokenomics-header{
 color:rgba(53, 44, 44, 1)
@@ -218,11 +292,11 @@ color:rgba(53, 44, 44, 1)
 
 .frame-4{
     /* background: url('ubuntuDAO.svg'), #620C0D; */
-    height:1793px;
+   
     width: 100%;
     display:flex;
     flex-direction:column;
-   padding-top:15rem;
+   padding-top:0;
    color:#ffffff;
     align-items:center;
     padding: 0%;
@@ -232,13 +306,43 @@ color:rgba(53, 44, 44, 1)
     justify-self: center;
     align-self: center;
 }
+.project-container{
+    display: flex;
+    flex-direction: row;
+}
+.project-card{
+    background: #ffffff;
+    width: 345px;
+    height: 201px;
+    border: #fff solid ;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.project-card h3{
+    color: #620C0D ;
+    font-size: 24px;
+    margin-top: 0.5rem;
+    
+    
+}
+.project-card p{
+    font-size: 13px;
+    color: #000000;
+    margin: 0;
+   
+}
 
 .token-distribution-header{
     color:#ffffff;
     margin-bottom:5rem;
 }
 .token-roadmap-image{
-    margin-top:10rem;
+    margin-top:2rem;
+    margin-bottom: 5rem;
 }
 .token-distribution-image-style{
      display:flex;
@@ -260,7 +364,7 @@ color:rgba(53, 44, 44, 1)
 .mobile-roadmap-image-style{
      display:none;
      visibility:invisible;
-     margin:-10rem;
+     
      width:5rem;
 }
 
@@ -373,13 +477,25 @@ display: none;
      width:2rem;
  }
   .welcome-section{
-      padding:3rem;
+      padding:0rem;
       padding-top:3rem;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
       
   }
+
+  .welcome-header{
+    font-size:2rem;
+    width:100%;
+    text-align: center;
+    
+}
   .welcome-text{
       font-size:1.2rem;
-      width: 70%;
+      width: 90%;
+      text-align: center;
   }
   .welcome-button{
       width:7rem;
@@ -392,21 +508,22 @@ display: none;
 
   .welcome-container{
     width: 100%;
-    height: 60%;
+    height: 80%;
+    
     
 }
 
 .second-section{
 width: 100%;
 display: flex;
-    height: 40%;
+    height: 20%;
     margin: 0;
     background-color: #620C0D;
    
 }
 
   .frame-2{
-      flex-direction:column-reverse;
+      flex-direction:column;
       display:flex;
       padding:0;
       width: 100%;
@@ -414,6 +531,10 @@ display: flex;
       justify-content: center;
       
       
+  }
+  .about-image-container{
+      padding: 0rem;
+      flex-direction: column;
   }
   .about-image-style{
       width:20rem;
@@ -434,6 +555,16 @@ display: flex;
       
    
   }
+.about-mission{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.about-card{
+    width: 90%;
+    margin: 1rem;
+}
+
   .frame-3{
       display:flex;
       width: 100vw;
@@ -453,15 +584,38 @@ display: flex;
   }
 
   .objectives-header{
-   width: 20rem;
-   margin-left: -5rem;
+    font-size: 24px;
+ 
 }
 .objectives-card{
     margin:0.2rem;
 }
 
+.partners-page{
+    padding: 0rem;
+    height: 167px;
+  
+
+}
+.partners-page h1{
+    font-size: 20px;
+}
+.partners-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.partners-section img{
+    width: 8rem;
+    margin: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+
 #tokenomics-page{
-    width: 80%;
+    width: 100%;
     padding:1rem;
     display:flex;
     flex-direction:column;
@@ -484,15 +638,22 @@ display: flex;
 
 .tokenomics-image{
     width:100%;
+    margin-top: 2rem;
     padding:0rem;
     display:flex;
     flex-direction:row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
    
 }
 .tokenomics-image-style{
     width:25rem;
-    height:20rem;
+    height:10rem;
     margin:1rem;
+    display: flex;
+    align-self: center;
 }
 .tokenomics-text:{
 
@@ -503,13 +664,10 @@ width: 20rem;
 
 .frame-4{
     /* background: url('ubuntuDAO.svg'), #620C0D; */
-    height:2000px;
     display:flex;
     flex-direction:column;
-   padding-top:2rem;
+   padding-top:0rem;
    padding-left:0;
-   align-items: center;
-   justify-content: center;
    width: 100%;
   
 }
@@ -517,6 +675,22 @@ width: 20rem;
     font-size:1.2rem;
    
     
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+.project-card{
+    background: #ffffff;
+    width: 345px;
+    height: 201px;
+    border: #fff solid ;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
 }
 
 
@@ -572,6 +746,14 @@ width: 20rem;
 #promotion{
     margin-left:-3rem;
 }
+
+.project-card{
+ 
+    width: 90%;
+    height: 201px;
+    
+}
+
 
 }
 
