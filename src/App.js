@@ -19,14 +19,14 @@ import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
 import Positioning from "./images/Positioning.svg";
 import Promotion from "./images/Promotion.svg";
-import Telegram from "./images/telegram.svg";
-import Facebook from "./images/facebook.svg";
+// import Telegram from "./images/telegram.svg";
+// import Facebook from "./images/facebook.svg";
 import Mission from "./images/mission.svg";
 import Vision from "./images/vision.svg";
 import Transparency from "./images/Transparency.svg";
 import CommunityDriven from "./images/Community driven.svg";
-import Instagram from "./images/instagram.svg";
-import Twitter from "./images/twitter.svg";
+// import Instagram from "./images/instagram.svg";
+// import Twitter from "./images/twitter.svg";
 import OverviewText from "./images/OverviewText.svg";
 // import ObjectivesText from './images/ObjectivesText.svg';
 import TokenomicsText from './images/TokenomicsText.svg';
@@ -37,11 +37,20 @@ import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
 import UbuntuLogo from './images/ubuntuMainLogo.svg'
+import UbuntuColorLogo from './images/UBUNTU-Color-Logo.svg'
 import PoocoinsLogo from './images/PoocoinsLogo.svg'
 import BinanceLogo from './images/BinanceLogo.svg'
 import CoinMarketCapLogo from './images/CoinMarketCapLogo.svg'
 import CoinGeckoLogo from './images/coingecko-logo-white-3f2aeb48e13428b7199395259dbb96280bf47ea05b2940ef7d3e87c61e4d8408 1.svg'
 import TokenHeaderImage from './images/headerImage.svg'
+
+import TelegramIcon from './images/telegram-icon.svg'
+import InstagramIcon from './images/instagram-icon.svg'
+import TwitterIcon from './images/twitter-icon.svg'
+import FacebookIcon from './images/facebook-icon.svg'
+import DiscordIcon from './images/discord-icon.svg'
+import RedditIcon from './images/reddit-icon.svg'
+
 
 import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
@@ -80,8 +89,8 @@ export const App  = () => {
 
                                 <li><a href="#welcome-page" className="lope">Home</a></li>
                                 <li><a href="#about-page" className="lope">Overview</a></li>
+                                <li><a href="#tokenomics-page" className="lope">Tokenomics</a></li>
                                 <li><a href="#roadmap" className="lope">Roadmap</a></li>
-                                <li><a href="#footer-section" className="lope">Booking</a></li>
                                 
                             </ul>
                         </div>
@@ -112,7 +121,7 @@ export const App  = () => {
         >
         <div className="welcome-container"
         style={{
-            backgroundImage: "url(/homeSVG.svg)",
+            backgroundImage: "url(/homePageSVG.svg)",
              "backgroundRepeat": "no-repeat",
  " backgroundAttachment": "fixed",
   "backgroundSize":" cover"
@@ -138,8 +147,8 @@ export const App  = () => {
                 </div>
                     <a href="#welcome-page" className="nav-link"><p >Home</p></a>
                     <a href="#about-page" className="nav-link"> <p >Overview</p></a>
-                     <a href="#roadmap" className="nav-link"> <p >RoadMap</p></a>
-                       <a href="#footer-section" className="nav-link"><p>Booking</p></a>
+                     <a href="#tokenomics-page" className="nav-link"> <p >Tokenomics</p></a>
+                       <a href="#roadmap" className="nav-link"><p>Roadmap</p></a>
                 </div>
             </div>
             <div className="welcome-section">
@@ -171,9 +180,7 @@ export const App  = () => {
                 <a
                 href="/"
                 className="welcome-button"
-                style={{
-                     backgroundImage: "url(/welcomeButtonImage.svg)"
-                }}
+               
                 >
                     <p>WHITE PAPER</p>
                     </a>
@@ -380,7 +387,7 @@ export const App  = () => {
                         <p>Text</p>
                     </div>
                 </div>
-                <h1 id="token-roadmap-header">UBUNTU ROADMAP</h1>
+                <h1 className="token-roadmap-header">UBUNTU ROADMAP</h1>
                 <div className="token-roadmap-image">
               <img alt="info"  src={MobileRoadmap}
                          className="mobile-roadmap-image-style"
@@ -401,18 +408,43 @@ export const App  = () => {
         {/* Footer */}
         <div id="footer-section" className="footer">
             <div className="footer-section-1">
+            <div className="footer-logo">
+             <img src={UbuntuColorLogo} alt="logo" />
+            </div>
+            
+           
+            
                 <nav className="footer-social">
                     <div>
-                        <img alt="info" src={Facebook}/>
+                    <a href="https://telegram.com" target="_blank" rel="noreferrer" >
+<img alt="info" src={TelegramIcon}/>
+                    </a>
+                        
                     </div>
                    <div>
-                        <img alt="info" src={Telegram}/>
+                   <a href="https://instagram.com" target="_blank" rel="noreferrer" >
+                        <img alt="info" src={InstagramIcon}/>
+                        </a>
                     </div>
                     <div>
-                        <img alt="info" src={Twitter}/>
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer" >
+                        <img alt="info" src={TwitterIcon}/>
+                        </a>
                     </div>
                    <div>
-                        <img alt="info" src={Instagram}/>
+                   <a href="https://instagram.com" target="_blank" rel="noreferrer" >
+                        <img alt="info" src={FacebookIcon}/>
+                        </a>
+                    </div>
+                     <div>
+                     <a href="https://instagram.com" target="_blank" rel="noreferrer" >
+                        <img alt="info" src={DiscordIcon}/>
+                        </a>
+                    </div>
+                     <div>
+                     <a href="https://instagram.com" target="_blank" rel="noreferrer" >
+                        <img alt="info" src={RedditIcon}/>
+                        </a>
                     </div>
                 
                 </nav>
@@ -431,8 +463,13 @@ export const App  = () => {
             <a href="/"><p>+2347013395472</p></a>
             <a href="/"><p>info@Ubuntudao.com </p></a>
             </div>
+            
         </div>
         {/* end of footer */}
+        <div className="mobile-footer-section-2">
+                <p>&copy; Ubuntu Dao </p>
+            </div>
+        
 
     </div>
     

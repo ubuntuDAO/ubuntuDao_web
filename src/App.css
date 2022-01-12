@@ -70,6 +70,10 @@ p{
     color: #ffffff;
     
 }
+.token-roadmap-header{
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
 .welcome-section{
     width:100%;
     padding: 6rem;
@@ -84,8 +88,9 @@ p{
     
 }
 .welcome-header{
-    font-size:2rem;
+    font-size:64px;
     width:50%;
+    margin-bottom: 0;
     
 }
 .nav-menu-bar{
@@ -95,25 +100,25 @@ p{
 }
 .welcome-text{
     font-size:18px;
-    width:50%;
+    width:40%;
+    margin-top: 0;
 }
 .welcome-button{
-    border-width:0.1rem;
-    border-color: #000000;
-    padding:0.1rem;
-    width:8rem;
+   
+    
+    
     display:flex;
     justify-content:center;
     align-items:center;
-    border-style:solid;
-    width: 10rem;
-height: 4rem;
-color: #ffffff;
+  
+    width: 197px;
+height: 63px;
+background-color: #ffffff;
 
 }
 .welcome-button p{
     font-size:18px;
-    color: #ffffff;
+    color: #620C0D;
 }
 
 .frame-2{
@@ -183,6 +188,8 @@ color: #ffffff;
 
 .partners-page{
     padding: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #620C0D;
     display: flex;
     flex-direction: column;
@@ -227,6 +234,7 @@ color: #ffffff;
 
 .frame-3{
     width: 100%;
+    padding-top: 2rem;
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -261,7 +269,7 @@ color: #ffffff;
 #tokenomics-page{
     width:100%;
     padding-top: 2rem;
-    padding:3rem;
+    padding:6rem;
     display:flex;
     flex-direction:row;
    
@@ -281,6 +289,7 @@ color: #ffffff;
     align-items: center;
     display: flex;
     margin-top: 12rem;
+    margin-right: 6rem;
 }
 .tokenomics-image-style{
     width: 35rem;
@@ -305,6 +314,7 @@ color:rgba(53, 44, 44, 1)
 .token-distribution-header{
     justify-self: center;
     align-self: center;
+    margin-top: 2rem;
 }
 .project-container{
     display: flex;
@@ -369,20 +379,25 @@ color:rgba(53, 44, 44, 1)
 }
 
 .footer{
-    height:300px;
+    height:384px;
     display:flex;
     flex-direction: row;
     padding:5rem;
     width: 100%;
 }
-
+.footer-logo{
+    margin: 1rem;
+    width: 79px;
+    height: 88px;
+}
 .footer p{
-    font-size:1.2rem;
+    font-size:20px;
     color:#620C0D;
 }
 .footer-social{
     display:flex;
     flex-direction: row;
+    margin-top: 1rem;
 }
 .footer-social div{
     margin: 0.5rem;
@@ -400,16 +415,26 @@ color:rgba(53, 44, 44, 1)
     align-items:flex-end;
     justify-content:center;
     margin: 1rem;
+    display: flex;
+    visibility: visible;
 }
 
 
 .footer-section-3{
-    width: 20rem;
+    width: 30rem;
   flex-direction:column;
     display:flex;
     justify-content:flex-end;
     align-items:flex-end;
     margin: 1rem;
+}
+.mobile-footer-section-2{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    visibility: hidden;
 }
 
 
@@ -635,23 +660,30 @@ display: flex;
     font-size:0.8rem;
 }
 
+#token-roadmap-header{
+    margin-top: 2rem;
+}
 
 .tokenomics-image{
     width:100%;
-    margin-top: 2rem;
+    margin-top: 0rem;
     padding:0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
     display:flex;
     flex-direction:row;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
    
 }
 .tokenomics-image-style{
-    width:25rem;
-    height:10rem;
+    width:100%;
+    height:15rem;
     margin:1rem;
+    
     display: flex;
     align-self: center;
 }
@@ -696,25 +728,57 @@ width: 20rem;
 
 .footer{
     display:flex;
-    flex-direction:column;
-    padding:1rem;
+    flex-direction:row;
+    padding:0rem;
+}
+.footer-section-1{
+    width: 40%;
 }
 .footer-section-2{
-  
-    align-items:flex-start;
+  width: 30%;
+    align-items:flex-end;
+     display: none;
+    visibility: hidden;
     
+}
+
+.mobile-footer-section-2{
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    visibility: visible;
+}
+.footer-section-2 p{
+     font-size: 12px;
 }
 
 
 .footer-section-3{
     align-items: flex-start;
+    display: flex;
+    width: 40%;
+    text-align: center;
+
+}
+
+.footer-section-3 p{
+    font-size: 12px;
+    text-align: center;
 }
 .footer-social p{
     margin:0.5rem
 }
+.footer-social div{
+    margin:0.2rem;
+    width: 26px;
+
+}
 
 .footer p{
-    font-size:0.8rem
+    font-size:14px
 }
 
 .token-distribution-image-style{
