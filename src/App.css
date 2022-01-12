@@ -266,6 +266,16 @@ background-color: #ffffff;
     margin:0rem;
 }
 
+.objectives-component{
+    display: flex;
+    visibility: visible;
+}
+
+.mobile-objectives-component{
+ display: none;
+    visibility: hidden;
+}
+
 #tokenomics-page{
     width:100%;
     padding-top: 2rem;
@@ -371,6 +381,8 @@ color:rgba(53, 44, 44, 1)
    display:flex;
      visibility:visible;
 }
+
+
 .mobile-distribution-image-style{
      display:none;
      visibility:invisible;
@@ -607,13 +619,28 @@ display: flex;
       justify-content: center;
   }
   .objectives-container{
-      width: 80%;
+      width: 90%;
       padding:0;
+     
       display:flex;
       flex-direction:column;
       align-items: center;
       justify-content: center;
   }
+
+  .objectives-component{
+       display: none;
+    visibility: hidden;
+  
+}
+
+.mobile-objectives-component{
+   display: flex;
+    visibility: visible;
+   
+    margin: 0;
+    align-self: center;
+}
 
   .objectives-header{
     font-size: 24px;

@@ -20,6 +20,11 @@ import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
 import Positioning from "./images/Positioning.svg";
 import Promotion from "./images/Promotion.svg";
+
+import MobileEmpowering from "./images/mobileEmpowering.svg";
+import MobileCreativity from "./images/mobileCreativity.svg";
+import MobilePositioning from "./images/mobilePositioning.svg";
+import MobilePromotion from "./images/mobilePromotion.svg";
 // import Telegram from "./images/telegram.svg";
 // import Facebook from "./images/facebook.svg";
 import Mission from "./images/mission.svg";
@@ -259,9 +264,18 @@ export const App  = () => {
                <div className="objectives-card">
                 <div className="objectives-innercard">
                     <img  alt="info" src={Positioning}
+                    className="objectives-component"
                     style={{
                        width:"18rem",
-                       height:"30rem"
+                       height:"30rem",
+                       
+                   }}
+                    />
+                    <img  alt="info" src={MobilePositioning}
+                    className="mobile-objectives-component"
+                    style={{
+                       width:"100%",
+                      
                    }}
                     />
                     {/* <div className="objectives-card-image">
@@ -276,9 +290,18 @@ export const App  = () => {
                <div className="objectives-card">
                 <div className="objectives-innercard">
                     <img alt="info"  src={Empowering}
+                     className="objectives-component"
                     style={{
                        width:"18rem",
                        height:"30rem"
+                   }}
+                    />
+                    <img alt="info"  src={MobileEmpowering}
+                     className="mobile-objectives-component"
+                   style={{
+                       width:"100%",
+                  marginTop:"-2rem"
+                       
                    }}
                     />
                     {/* <div className="objectives-card-image">
@@ -293,9 +316,19 @@ export const App  = () => {
                <div className="objectives-card">
                 <div className="objectives-innercard">
                    <img alt="info"  src={Creativity}
+                    className="objectives-component"
                    style={{
                        width:"15rem",
-                       height:"30rem"
+                      height:"30rem"
+                   }}
+                   />
+                   <img alt="info"  src={MobileCreativity}
+                    className="mobile-objectives-component"
+                  style={{
+                       width:"100%",
+                      
+                      
+                      
                    }}
                    />
                     {/* <div className="objectives-card-image">
@@ -310,10 +343,22 @@ export const App  = () => {
                <div className="objectives-card">
                 <div className="objectives-innercard">
                    <img alt="info"  src={Promotion}
+                    className="objectives-component"
                    id="promotion"
                    style={{
                        width:"20rem",
-                       height:"30rem"
+                        height:"30rem"
+                      
+                   }}
+                   />
+                   <img alt="info"  src={MobilePromotion}
+                    className="mobile-objectives-component"
+                   id="promotion"
+                  style={{
+                       width:"100%",
+                        marginLeft:"0rem",
+                        marginTop:"-1.2rem"
+                       
                    }}
                    />
                     {/* <div className="objectives-card-image">
