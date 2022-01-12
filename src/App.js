@@ -15,6 +15,7 @@ import './App.css'
 // import Group12 from "./roup12.svg";
 // import UbuntuDAO from "./images/ubuntu DAO.svg";
 import TokenomicsImage from "./images/tokenomics.svg";
+import MobileTokenomicsImage from './images/mobile-treasury-image.svg'
 import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
 import Positioning from "./images/Positioning.svg";
@@ -34,6 +35,7 @@ import MobileRoadmap from './images/mobileRoadmap.svg'
 // import MobileDistribution from './images/mobileDistribution.svg'
 // import TokenDistribution from './images/tokenDistributionImage.svg'
 import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
+import MobileTokenomicsDistribution from './images/mobile-tokenomics.svg'
 import Roadmap from './images/Roadmap.svg'
 import MenuBar from './images/menubar.svg'
 import UbuntuLogo from './images/ubuntuMainLogo.svg'
@@ -339,11 +341,17 @@ export const App  = () => {
                 <img alt="info" 
                     className="tokenomics-image-style"
                      src={TokenomicsDistribution}/>
+                     <img alt="info" 
+                    className="mobile-tokenomics-image-style"
+                     src={MobileTokenomicsDistribution}/>
              </div>  
              <AnimationOnScroll animateIn="animate__slideInRight"  className="tokenomics-image">
                 <img alt="info" 
                className="tokenomics-image-style" 
                 src={TokenomicsImage}/>
+                <img alt="info" 
+               className="mobile-tokenomics-image-style" 
+                src={MobileTokenomicsImage}/>
              </AnimationOnScroll> 
         </div>
         {/* end of tokenomics page */}
