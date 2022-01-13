@@ -37,7 +37,7 @@ p{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    height:100vh;
+    height:120vh;
     width:100%;
     color:#ffffff;
     /* background-image: url(/homepageImage.svg) */
@@ -78,6 +78,7 @@ p{
 .welcome-section{
     width:100%;
     padding: 6rem;
+
 }
 .welcome-container{
     width: 90%;
@@ -116,13 +117,13 @@ background-size: cover;
     justify-content:center;
     align-items:center;
   
-    width: 150px;
-height: 50px;
+    width: 130px;
+height: 45px;
 background-color: #ffffff;
 
 }
 .welcome-button p{
-    font-size:18px;
+    font-size:16px;
     color: #620C0D;
 }
 
@@ -527,7 +528,7 @@ display: none;
  }
   .welcome-section{
       padding:0rem;
-      padding-top:3rem;
+      padding-top:6rem;
       justify-content: center;
     align-items: center;
     display: flex;
@@ -536,7 +537,7 @@ display: none;
   }
 
   .welcome-header{
-    font-size:2rem;
+    font-size:48px;
     width:100%;
     text-align: center;
     
@@ -547,9 +548,9 @@ display: none;
       text-align: center;
   }
   .welcome-button{
-      width:7rem;
+      width: 165px;;
       border:none;
-      height:2rem;
+      height:55px;
   }
   .welcome-button p{
       font-size:0.8rem;
@@ -580,6 +581,7 @@ display: flex;
       width: 100%;
       align-items: center;
       justify-content: center;
+      align-self: center;
       
       
   }
@@ -612,8 +614,14 @@ display: flex;
     width: 100%;
 }
 .about-card{
-    width: 90%;
+    width: 80%;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
 }
 
   .frame-3{
@@ -621,18 +629,20 @@ display: flex;
       width: 100vw;
       max-width: 100vw;
       flex-direction:column;
-      padding:1rem;
+      padding:0rem;
       align-items: center;
       justify-content: center;
+     
   }
   .objectives-container{
-      width: 90%;
+      width: 100%;
       padding:0;
      
       display:flex;
       flex-direction:column;
       align-items: center;
       justify-content: center;
+     
   }
 
   .objectives-component{

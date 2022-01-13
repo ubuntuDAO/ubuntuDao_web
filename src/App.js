@@ -197,7 +197,10 @@ export const App  = () => {
             <div    
                 className="second-section"
                 style={{
-                     backgroundImage: "url(/SecondHalfHomePage-2.svg)"
+                     backgroundImage: "url(/SecondHalfHomePage-2.svg)",
+                      backgroundRepeat: "no-repeat",
+                        backgroundSize:" 100vh",
+ 
                 }}
                 >
             <p></p>
