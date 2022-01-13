@@ -416,7 +416,7 @@ export const App  = () => {
             <img alt="info" 
                className="token-distribution-header-image-style" 
                 src={TokenHeaderImage}/>
-                <h1 className="token-distribution-header">Our Projects</h1>
+                <h1 className="token-distribution-header">OUR PROJECTS</h1>
                 <div className="project-container">
                     <div className="project-card">
                         <h3>UBUNTU FOUNDATION</h3>
@@ -445,7 +445,7 @@ export const App  = () => {
                         <p>Text</p>
                     </div>
                 </div>
-                <h1 className="token-roadmap-header">UBUNTU ROADMAP</h1>
+                <h1 className="token-roadmap-header">UBUNTU DAO ROADMAP</h1>
                 <div className="token-roadmap-image">
               <img alt="info"  src={MobileRoadmap}
                          className="mobile-roadmap-image-style"
