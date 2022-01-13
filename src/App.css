@@ -83,9 +83,10 @@ p{
 .welcome-container{
     width: 90%;
     height: 100%;
+    background-color: #620C0D;
      background-image: url("./images/homeSVG.svg");
 background-repeat: no-repeat;
-background-size: cover;
+background-size:100% 100%; 
  
 }
 .second-section{
@@ -93,6 +94,7 @@ background-size: cover;
     height: 100%;
     display: flex;
     visibility: visible;
+      background-color: #620C0D;
     
 }
 .welcome-header{
@@ -345,6 +347,9 @@ color:rgba(53, 44, 44, 1)
 .project-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .project-card{
     background: #ffffff;
@@ -480,6 +485,7 @@ color:rgba(53, 44, 44, 1)
      flex-direction: column;
      width: 100vw;
      height: 100vh;
+      
 
      
   }
@@ -536,6 +542,7 @@ display: none;
     align-items: center;
     display: flex;
     flex-direction: column;
+   
       
   }
 
@@ -567,7 +574,8 @@ display: none;
     height: 100%;
       background-image: url("./images/mobileHomeSvg.svg");
 background-repeat: no-repeat;
-background-size:100%;
+background-size:auto;
+background-color: #620C0D;
     
 }
 

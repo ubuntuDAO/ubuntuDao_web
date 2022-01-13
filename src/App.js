@@ -246,7 +246,7 @@ export const App  = () => {
 
        
         <div className="partners-page">
-        <h1>Our Partners</h1>
+        <h1>OUR PARTNERS</h1>
         <div className="partners-section">
                 <img  alt="info" src={CoinGeckoLogo} className="partners-image-style"/>
                 <img  alt="info" src={CoinMarketCapLogo} className="partners-image-style"/>
