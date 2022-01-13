@@ -128,10 +128,10 @@ export const App  = () => {
         >
         <div className="welcome-container"
         style={{
-            backgroundImage: "url(/homePageSVG.svg)",
-             "backgroundRepeat": "no-repeat",
- " backgroundAttachment": "fixed",
-  "backgroundSize":" cover"
+//             backgroundImage: "url(/homeSVG.svg)",
+//              "backgroundRepeat": "no-repeat",
+ 
+//   backgroundSize:" cover"
         }}
         >
             <div className="navigation-menu">
@@ -211,9 +211,9 @@ export const App  = () => {
                 <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
                 <p className="about-text">It is a Blockchain Project that leverages the simplicity and communal spirit associated with meme tokens to drive Blockchain adoption and very importantly, promote a creator-ecosystem (web3 Startups) in Africa. The movement has already begun; to transit Africa from a (sadly) default consumption tilt to becoming production conscious and the Ubuntu Dao Project further emphasizes the truth that Africans are innovative enough and we can change ‘our’ world and sure enough ‘the’ world.              </p>
-            <a className="about-link"
+            {/* <a className="about-link"
            href="/"
-            ><p>Read More</p></a>
+            ><p>Read More</p></a> */}
              </div>
              
               <AnimationOnScroll animateIn="animate__slideInRight" className="about-mission">
@@ -293,7 +293,8 @@ export const App  = () => {
                      className="objectives-component"
                     style={{
                        width:"18rem",
-                       height:"30rem"
+                       height:"30rem",
+                       marginTop:"2rem"
                    }}
                     />
                     <img alt="info"  src={MobileEmpowering}
@@ -347,7 +348,8 @@ export const App  = () => {
                    id="promotion"
                    style={{
                        width:"20rem",
-                        height:"30rem"
+                        height:"30rem",
+                        marginTop:"-3rem"
                       
                    }}
                    />
