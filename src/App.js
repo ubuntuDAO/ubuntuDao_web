@@ -200,6 +200,8 @@ export const App  = () => {
                      backgroundImage: "url(/SecondHalfHomePage-2.svg)",
                       backgroundRepeat: "no-repeat",
                         backgroundSize:" 100vh",
+                        display:"none",
+                        visibility:"hidden"
  
                 }}
                 >
