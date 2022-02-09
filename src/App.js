@@ -1,19 +1,9 @@
 import React, { useState } from "react";
-//  import ReactDOM from 'react-dom';
-// import mystyles from './mystyles.module.css';
+
 import './App.css'
 
 // import './src/images';
-// import Frame from "./Frame.svg";
-// import Group from "./Group.svg";
-// import Group5 from "./Group5.svg";
-// import Group6 from "./Group6.svg";
-// import Group7 from "./Group7.svg";
-// import Frame19 from "./Frame19.svg";
-// import Group10 from "./Group10.svg";
-// import Group11 from "./Group11.svg";
-// import Group12 from "./roup12.svg";
-// import UbuntuDAO from "./images/ubuntu DAO.svg";
+
 import TokenomicsImage from "./images/tokenomics.svg";
 import MobileTokenomicsImage from './images/mobile-treasury-image.svg'
 import Empowering from "./images/Empowering.svg";
@@ -41,14 +31,14 @@ import MobileRoadmap from './images/mobileRoadmap.svg'
 // import TokenDistribution from './images/tokenDistributionImage.svg'
 import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
 import MobileTokenomicsDistribution from './images/mobile-tokenomics.svg'
-import Roadmap from './images/Roadmap.svg'
+import Roadmap from './images/new-roadmap.svg'
 import MenuBar from './images/menubar.svg'
 import UbuntuLogo from './images/ubuntuMainLogo.svg'
 import UbuntuColorLogo from './images/UBUNTU-Color-Logo.svg'
-import PoocoinsLogo from './images/PoocoinsLogo.svg'
-import BinanceLogo from './images/BinanceLogo.svg'
-import CoinMarketCapLogo from './images/CoinMarketCapLogo.svg'
-import CoinGeckoLogo from './images/coingecko-logo-white-3f2aeb48e13428b7199395259dbb96280bf47ea05b2940ef7d3e87c61e4d8408 1.svg'
+import PoocoinsLogo from './images/PoocoinsLogo (1).svg'
+import BinanceLogo from './images/BinanceLogo (1).svg'
+import CoinMarketCapLogo from './images/CoinMarketCapLogo (1).svg'
+import CoinGeckoLogo from './images/CoingeckoLogo.svg'
 import TokenHeaderImage from './images/headerImage.svg'
 
 import TelegramIcon from './images/telegram-icon.svg'
@@ -58,17 +48,28 @@ import FacebookIcon from './images/facebook-icon.svg'
 import DiscordIcon from './images/discord-icon.svg'
 import RedditIcon from './images/reddit-icon.svg'
 
+import BlockchainImage from './images/Blockchain Dev Institute.svg'
+import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
+import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
+import LittlePhilantrophist from './images/Little Philanthropist.svg'
+
 
 import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
 import 'animate.css/animate.min.css'
 import {AnimationOnScroll} from 'react-animation-on-scroll' 
 
+
 // import {useMediaQuery} from "react-responsive";
 // import { mediaQueries } from "./responsive";
 export const App  = () => {
  const [menu, setMenu] = useState(false)
-  
+ const [currentSlide, setCurrentSlide] = useState(LittlePhilantrophist)
+ const [firstSlideStyle, setFirstSlideStyle] = useState(null)
+  const [secondSlideStyle, setSecondSlideStyle] = useState(null)
+   const [thirdSlideStyle, setThirdSlideStyle] = useState(null)
+    const [fourthSlideStyle, setFourthSlideStyle] = useState(null)
+
  const renderMenu = () => {
         if (menu) {
             return (
@@ -110,14 +111,6 @@ export const App  = () => {
     }
 
 
-
-//   const isDesktop = useMediaQuery({query: mediaQueries.desktopQuery})
-//   const mystyle = {
-    //margin-left: 30;
-    // padding: "0px",
-    // margin: "30px",
-//     width: "100%""
-//   }
 
   
     return (
@@ -243,21 +236,86 @@ export const App  = () => {
                 <img  alt="info" src={Transparency} className="about-image-style"/>
              </AnimationOnScroll>  
         {/* end of about image */}
-        {/* Partners Section */}
+        {/* Project Section */}
 
 
+        <div className="projects-page">
+        <h1>OUR PROJECTS</h1>
+        <div className="projects-section">
+             <div className="project-container">
+              <img src={currentSlide} alt='our project initiative'/>
+                <div className="slide-container">
+                    <span 
+                    style={firstSlideStyle}
+                    
+                    onClick={()=>{
+                        setCurrentSlide(LittlePhilantrophist)
+                        setFirstSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setSecondSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setFourthSlideStyle(null)
+                    }}
+                    className="slide-select">
+<p>&#160; </p>
+                    </span>
+                    <span 
+                    onClick={()=>{
+                        setCurrentSlide(MadeInAfricaImage)
+                         setSecondSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setFirstSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setFourthSlideStyle(null)
+                    }}
+                    style={secondSlideStyle}
+                     className="slide-select">
+                        <p>&#160; </p>
+                    </span>
+                    <span onClick={()=>{
+                        
+                        setCurrentSlide(UbuntuCapitalImage)
+                         setThirdSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setSecondSlideStyle(null)
+                        setFirstSlideStyle(null)
+                        setFourthSlideStyle(null)
+                    }} 
+                    style={thirdSlideStyle}
+                    className="slide-select">
+                        <p>&#160; </p>
+                    </span>
+                    <span onClick={()=>{
+                        setCurrentSlide(BlockchainImage)
+                         setFourthSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setSecondSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setFirstSlideStyle(null)
+                    }} 
+                    style={fourthSlideStyle}
+                    className="slide-select">
+                        <p>&#160; </p>
+                    </span>
+                </div>
+             </div>
+        </div>
+
+        </div>
        
-        <div className="partners-page">
-        <h1>OUR PARTNERS</h1>
-        <div className="partners-section">
-                <img  alt="info" src={CoinGeckoLogo} className="partners-image-style"/>
-                <img  alt="info" src={CoinMarketCapLogo} className="partners-image-style"/>
-                <img  alt="info" src={BinanceLogo} className="partners-image-style"/>
-                <img  alt="info" src={PoocoinsLogo} className="partners-image-style"/>
-        </div>
-
-        </div>
-         {/* end of partners section */}
+         {/* end of project section */}
 
          {/* objectives scren page */}
         <div id="objectives-page" className="frame-3">
@@ -418,35 +476,7 @@ export const App  = () => {
             <img alt="info" 
                className="token-distribution-header-image-style" 
                 src={TokenHeaderImage}/>
-                <h1 className="token-distribution-header">OUR PROJECTS</h1>
-                <div className="project-container">
-                    <div className="project-card">
-                        <h3>UBUNTU FOUNDATION</h3>
-                        <p>Text</p>
-                    </div>
-                    <div className="project-card">
-<h3>UBUNTU CAPITAL</h3>
-                        <p>venture fund for blockchain startups</p>
-                    </div>
-                    <div className="project-card">
-<h3>MADE IN AFRICA E-COMMERCE STORE</h3>
-                        <p>Inventory Management, Originality and supply powered by nFTs</p>
-                    </div>
-                </div>
-                <div className="project-container">
-                    <div className="project-card">
-<h3>MEDIA COMMUNICATIONS</h3>
-                        <p>We would setup a media communicarions platform and also collaborate with different existing media platforms focused on blockchain technology to promote the afrocentric narratives and stamp africa’s relevance in the global blockchain space </p>
-                    </div>
-                    <div className="project-card">
-<h3>AFRICAS BLOCKCHAIN DEVELOPERS INSTITUTE</h3>
-                        <p>Text</p>
-                    </div>
-                    <div className="project-card">
-<h3>UBUNTU FOUNDATION</h3>
-                        <p>Text</p>
-                    </div>
-                </div>
+              
                 <h1 className="token-roadmap-header">UBUNTU DAO ROADMAP</h1>
                 <div className="token-roadmap-image">
               <img alt="info"  src={MobileRoadmap}
@@ -517,13 +547,19 @@ export const App  = () => {
                 </div>
             </div>
             <div className="footer-section-2">
-                <p>&copy; Ubuntu Dao </p>
+                {/* <p>&copy; Ubuntu Dao </p> */}
             </div>
             <div className="footer-section-3">
             <a href="/"><p>+2347013395472</p></a>
             <a href="/"><p>info@Ubuntudao.com </p></a>
             </div>
             
+        </div>
+        <div className="partners-container">
+            <img src={CoinGeckoLogo} alt='congecko' className="coingecko"/>
+            <img src={CoinMarketCapLogo} alt='coinmarket' className="coinmarket"/>
+            <img src={BinanceLogo} alt='binance' className="binance"/>
+            <img src={PoocoinsLogo} alt='poocoin' className="poocoin"/>
         </div>
         {/* end of footer */}
         <div className="mobile-footer-section-2">
@@ -533,96 +569,8 @@ export const App  = () => {
 
     </div>
     
-    //   <div className="desktop---8" 
-    //   style={mystyle}
-      
-    //   >
-        
-        // {/* <div className="frame-1"> */}
-        //   {/* <img alt="info" alt="info" src={Frame} className="App-Frame" alt="Frame" /> */}
-        //   {
-              /* <div className="frame-1-5">
-            <div className="frame-1-4">
-              <img alt="info" alt="info" src="" />
-            </div>
-          </div>
-          
-          <div className="frame-1-7">
-            <img alt="info" alt="info" src="" />
-            <div className="ellipse-1" />
-            <div className="frame-1-0" />
-            <div className="frame-1-1" />
-            <div className="frame-1-2" />
-          </div>
-        </div>
-         <div className="group-9">
-          
-          <div className="frame-1-8">
-            <div className="frame-4">
-              <img alt="info" alt="info" src={Group} className="App-Group" alt="Group" />
-              <div className="ellipse-3-4" />
-            </div>
-            <div className="frame-5">
-              <img alt="info" alt="info" src=""/>
-              <div className="ellipse-3-4" />
-            </div>
-            
-            <div className="component-6">
-              <div className="component-6">
-                <div className="rectangle-7" />
-                 <img alt="info" alt="info" src={Group11} className="App-Group11" alt="Group11" />
-              </div>
-            </div>
-            
-            
-          </div>
-          
-        </div>
-        <div className="frame-6">
-          <img alt="info" alt="info" src="" />
-          <div className="ellipse-3-4" />
-        </div>
+    
        
-        <div className="frame-6">
-          <img alt="info" alt="info" src="" />
-          <div className="ellipse-3-4" />
-        </div>
-        <div className="frame-7">
-           <div className="ellipse-3-4" />
-        </div>
-        <div className="frame-8">
-          <div className="frame-8">
-     
-          </div>
-        </div>
-        <div className="component-1">
-          <img alt="info" alt="info" src={Group12} className="App-Group12" alt="Group12" />
-        </div>
-   
-        <img alt="info" alt="info" src="" />
-        <img alt="info" alt="info" src="" />
-        <div className="rectangle-4" />
-        <img alt="info" alt="info" src="" />
-        <div className="frame-2">
-          <div className="ellipse-2" />
-          <div className="ellipse-3" />
-          <div className="ellipse-4" />
-          <div className="ellipse-5" />
-          <div className="ellipse-6" />
-          <div className="ellipse-8" />
-          <div className="ellipse-7" />
-        </div>
-       
-      
-        <div className="group-3">
-        <img alt="info" alt="info" src={Group10} className="App-Group10" alt="Group10"/>
-      
-        </div>
-     
-      
-         
-      </div> */
-    //   }
     )
   
  

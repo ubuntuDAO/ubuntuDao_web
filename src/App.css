@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 p{
-    font-size: 13px;
+    font-size: 15px;
 }
 .sidebar-panel-navigation{
     margin-top: 5rem;
@@ -198,6 +198,72 @@ background-color: #ffffff;
     font-size: 13px;
     
 }
+.projects-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.projects-page h1{
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.09em;
+
+color: #352C2C;
+}
+.projects-section{
+     width: 100wh;
+height: 437px;
+display: flex;
+}
+
+.project-container{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    
+}
+
+.project-container img{
+     width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+.slide-container{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 42vw;
+
+    width: 140px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-select{
+    border: #ffffff solid 3px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slide-select:hover{
+    cursor: pointer;
+    width: 32px;
+    border-radius: 20px;
+}
 
 .partners-page{
     padding: 6rem;
@@ -211,6 +277,8 @@ background-color: #ffffff;
     height: 325px;
 
 }
+
+
 
  .about-image-container{
       padding: 6rem;
@@ -257,10 +325,16 @@ background-color: #ffffff;
 
 .objectives-header{
     display: flex;
-    font-size: 36px;
-    align-self: center;
-    text-align: center;
-    color: #620C0D;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+/* identical to box height */
+
+text-align: center;
+
+color: #352C2C;
 }
 
 
@@ -346,38 +420,8 @@ color:rgba(53, 44, 44, 1)
     align-self: center;
     margin-top: 2rem;
 }
-.project-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.project-card{
-    background: #ffffff;
-    width: 345px;
-    height: 201px;
-    border: #fff solid ;
-    margin: 1rem;
-    border-radius: 0.4rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.project-card h3{
-    color: #620C0D ;
-    font-size: 24px;
-    margin-top: 0.5rem;
-    
-    
-}
-.project-card p{
-    font-size: 13px;
-    color: #000000;
-    margin: 0;
-   
-}
+
+
 
 .token-distribution-header{
     color:#ffffff;
@@ -468,9 +512,52 @@ color:rgba(53, 44, 44, 1)
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: none;
-    visibility: hidden;
+    display: flex;
+    visibility: visible;
 }
+
+.mobile-footer-section-2 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.partners-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+}
+
+.partners-container img{
+    height: 74px;
+    width: 265px;
+    margin: 20px;
+}
+
+.coingecko{
+width: 265px;
+height: 72.37px;
+}
+
+.coinmarket{
+width: 341px;
+height: 62.03px;
+}
+
+.binance{
+width: 231px;
+height: 54.69px;
+}
+
+.poocoin{
+    width: 300px;
+height: 106.11px;
+}
+
+
 
 
  
@@ -790,22 +877,35 @@ width: 20rem;
    
     
 }
+
+.projects-page h1{
+    font-size: 1.5rem;
+}
+
+.projects-section{
+     width: 100vw;
+height: 50vh;
+display: flex;
+}
+
 .project-container{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-}
-.project-card{
-    background: #ffffff;
-    width: 345px;
-    height: 201px;
-    border: #fff solid ;
-    margin: 1rem;
-    border-radius: 0.4rem;
-    display: flex;
-    flex-direction: column;
+    height: 30vh;
+    background-color: #620C0D;
+    flex-direction: row;
     
-    align-items: center;
 }
+
+.project-container img{
+     width: 25em;
+    display: flex;
+
+    height: 30em;
+    flex-direction: row;
+}
+
+
 
 
 .footer{
@@ -901,6 +1001,44 @@ width: 20rem;
     
 }
 
+
+
+.partners-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.partners-container img{
+    height: 50px;
+    width: 150px;
+    margin: 2px;
+}
+
+.coingecko{
+width: 100px;
+height: 72.37px;
+}
+
+.coinmarket{
+width: 50px;
+height: 30px;
+}
+
+.binance{
+
+width: 100px;
+height: 54.69px;
+}
+
+.poocoin{
+    width: 100px;
+height: 106.11px;
+}
 
 }
 
