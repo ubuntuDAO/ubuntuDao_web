@@ -19,8 +19,8 @@ import MobilePromotion from "./images/mobilePromotion.svg";
 // import Facebook from "./images/facebook.svg";
 import Mission from "./images/mission.svg";
 import Vision from "./images/vision.svg";
-import Transparency from "./images/Transparency.svg";
-import CommunityDriven from "./images/Community driven.svg";
+import Transparency from "./images/tranparency-strategic.svg";
+import CommunityDriven from "./images/community-pan-african.svg";
 // import Instagram from "./images/instagram.svg";
 // import Twitter from "./images/twitter.svg";
 import OverviewText from "./images/OverviewText.svg";
@@ -31,7 +31,7 @@ import MobileRoadmap from './images/mobileRoadmap.svg'
 // import TokenDistribution from './images/tokenDistributionImage.svg'
 import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
 import MobileTokenomicsDistribution from './images/mobile-tokenomics.svg'
-import Roadmap from './images/new-roadmap.svg'
+import Roadmap from './images/newUbuntu-Dao-ROADMAP.svg'
 import MenuBar from './images/menubar.svg'
 import UbuntuLogo from './images/ubuntuMainLogo.svg'
 import UbuntuColorLogo from './images/UBUNTU-Color-Logo.svg'
@@ -145,10 +145,10 @@ export const App  = () => {
                 >
                     <img alt="info" src={MenuBar}/>
                 </div>
-                    <a href="#welcome-page" className="nav-link"><p >Home</p></a>
-                    <a href="#about-page" className="nav-link"> <p >Overview</p></a>
-                     <a href="#tokenomics-page" className="nav-link"> <p >Tokenomics</p></a>
-                       <a href="#roadmap" className="nav-link"><p>Roadmap</p></a>
+                    <a href="#welcome-page" className="nav-link"><p >HOME</p></a>
+                    <a href="#about-page" className="nav-link"> <p >OVERVIEW</p></a>
+                     <a href="#tokenomics-page" className="nav-link"> <p >TOKENOMICS</p></a>
+                       <a href="#roadmap" className="nav-link"><p>ROADMAP</p></a>
                 </div>
             </div>
             <div className="welcome-section">
@@ -469,15 +469,13 @@ export const App  = () => {
             <div id="token-distribution-page"
              className="frame-4"
 
-                    style={{
-                     backgroundImage: "url(/tokenDistributionBackgroundImage.svg)"
-                }}
+                   
             >
-            <img alt="info" 
+            {/* <img alt="info" 
                className="token-distribution-header-image-style" 
-                src={TokenHeaderImage}/>
+                src={TokenHeaderImage}/> */}
               
-                <h1 className="token-roadmap-header">UBUNTU DAO ROADMAP</h1>
+                {/* <h1 className="token-roadmap-header">UBUNTU DAO ROADMAP</h1> */}
                 <div className="token-roadmap-image">
               <img alt="info"  src={MobileRoadmap}
                          className="mobile-roadmap-image-style"
@@ -488,18 +486,26 @@ export const App  = () => {
                     <img id="roadmap" alt="info"  src={Roadmap}
                          className="token-roadmap-image-style"
                     style={{
-                        width:'95rem'
+                        width:'100vw'
                     }}
                     />
                 </div>
             </div>
         {/* end of token distribution page */}
-        
+        <div className="footer-container">       
+        <img alt="info" 
+               className="token-distribution-header-image-style" 
+                src={TokenHeaderImage}/>
         {/* Footer */}
-        <div id="footer-section" className="footer">
+        <div id="footer-section" className="footer" 
+         style={{
+                     backgroundImage: "url(/tokenDistributionBackgroundImage.svg)"
+                }}
+        >
+         
             <div className="footer-section-1">
             <div className="footer-logo">
-             <img src={UbuntuColorLogo} alt="logo" />
+             <img src={UbuntuLogo} alt="logo" className="ubuntu-footer-logo" />
             </div>
             
            
@@ -547,24 +553,26 @@ export const App  = () => {
                 </div>
             </div>
             <div className="footer-section-2">
-                {/* <p>&copy; Ubuntu Dao </p> */}
+                <p>&copy; Ubuntu Dao </p>
             </div>
             <div className="footer-section-3">
             <a href="/"><p>+2347013395472</p></a>
             <a href="/"><p>info@Ubuntudao.com </p></a>
             </div>
             
+       
         </div>
-        <div className="partners-container">
+</div>
+        {/* <div className="partners-container">
             <img src={CoinGeckoLogo} alt='congecko' className="coingecko"/>
             <img src={CoinMarketCapLogo} alt='coinmarket' className="coinmarket"/>
             <img src={BinanceLogo} alt='binance' className="binance"/>
             <img src={PoocoinsLogo} alt='poocoin' className="poocoin"/>
-        </div>
+        </div> */}
         {/* end of footer */}
-        <div className="mobile-footer-section-2">
+        {/* <div className="mobile-footer-section-2">
                 <p>&copy; Ubuntu Dao </p>
-            </div>
+            </div> */}
         
 
     </div>

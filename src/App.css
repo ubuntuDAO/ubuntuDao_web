@@ -54,7 +54,7 @@ p{
 .logo-container{
     /* display: none;
     visibility: hidden; */
-     width:50%;
+     width:30%;
      padding-left:2rem;
 }
 .navigation-list{
@@ -62,13 +62,20 @@ p{
     display:flex;
     top: 0px;
     flex-direction:row;
-     width:50%;
+     width:70%;
      align-items: center;
 }
 .nav-link{
     margin-left:1rem;
     margin-right:1rem;
     color: #ffffff;
+  
+    
+}
+
+.nav-link p{
+   
+    font-size: 18px;
     
 }
 .token-roadmap-header{
@@ -133,8 +140,7 @@ background-color: #ffffff;
 }
 
 .frame-2{
-    margin-top: -10rem;
-    padding: 2rem;
+    padding: 2 rem;
     display:flex;
     flex-direction: row;
     width:100%;
@@ -290,6 +296,7 @@ display: flex;
 
   .about-image-style{
       width: 35rem;
+      height: 316px;
   }
 
 .tokenomics-distribution-image-style{
@@ -456,22 +463,43 @@ color:rgba(53, 44, 44, 1)
      
      width:5rem;
 }
+.token-distribution-header-image-style{
+    width: 100vw;
+    height: 150px;
+    margin: 0;
+}
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     background-color:#620C0D;
+}
 .footer{
     height:384px;
     display:flex;
     flex-direction: row;
     padding:5rem;
+    background-color:#620C0D;
     width: 100%;
 }
-.footer-logo{
-    margin: 1rem;
+
+.ubuntu-footer-logo{
+margin: 1rem;
     width: 79px;
     height: 88px;
+    margin-left: 0;
+}
+
+
+.footer-logo{
+    margin: 1rem;
+    margin-left: 0;
+    
 }
 .footer p{
     font-size:20px;
-    color:#620C0D;
+    color:#ffffff;
 }
 .footer-social{
     display:flex;
@@ -905,8 +933,19 @@ display: flex;
     flex-direction: row;
 }
 
+.token-distribution-header-image-style{
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+}
 
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     background-color:#620C0D;
+}
 
 .footer{
     display:flex;
@@ -968,8 +1007,8 @@ display: flex;
     visibility:hidden;
 }
 .token-roadmap-image-style{
-    display:none;
-    visibility:hidden;
+    display:flex;
+    visibility:visible;
 }
 .mobile-distribution-image-style{
      display:flex;
@@ -979,11 +1018,10 @@ display: flex;
   
 }
 .mobile-roadmap-image-style{
-     display:flex;
-     visibility:visible;
+     display:none;
+     visibility:hidden;
      margin-top: -4rem;
    
- 
     
 }
 .tokenomics-image-style{
