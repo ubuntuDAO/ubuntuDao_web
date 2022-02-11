@@ -1,4 +1,4 @@
-import React,  from "react";
+import React from "react";
 //  import ReactDOM from 'react-dom';
 // import mystyles from './mystyles.module.css';
 
@@ -43,7 +43,7 @@ let itemsStyle = {
    padding: "20px"
   , background: "#FFCA28"
   , borderRadius: "4px"
-  , margin: "0px 0px", padding: "0px"
+  , margin: "0px 0px", 
 };
 
 let textBoxStyle = {
