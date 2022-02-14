@@ -88,6 +88,11 @@ p{
 
 
 }
+
+.copy{
+    display: none;
+    visibility: hidden;
+}
 .welcome-container{
     width: 100%;
     height: 100%;
@@ -1099,6 +1104,11 @@ height: 54.69px;
 .poocoin{
     width: 100px;
 height: 106.11px;
+}
+
+.copy{
+    display: flex;
+    visibility: visible;
 }
 
 }

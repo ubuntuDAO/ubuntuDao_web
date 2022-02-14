@@ -4,8 +4,8 @@ import './App.css'
 
 // import './src/images';
 
-import TokenomicsImage from "./images/tokenomics.svg";
-import MobileTokenomicsImage from './images/mobile-treasury-image.svg'
+import TokenomicsImage from "./images/tokenomicsnew.svg";
+import MobileTokenomicsImage from './images/mobile-treasury-imagenew.svg'
 import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";
 import Positioning from "./images/Positioning.svg";
@@ -554,11 +554,12 @@ export const App  = () => {
             </div>
             <div className="footer-section-2">
                 {/* <p>&copy; Ubuntu Dao 2020 </p> */}
+                <a href="/"><p>&copy; Ubuntu DAO 2022 </p></a>
             </div>
             <div className="footer-section-3">
             
-            <a href="/"><p>info@Ubuntudao.com </p></a>
-            <a href="/"><p>&copy; Ubuntu Dao 2020 </p></a>
+            <a href="/"><p>info@UbuntuDAO.com </p></a>
+            <a href="/" className="copy"><p>&copy; Ubuntu DAO 2022 </p></a>
             </div>
             
        
