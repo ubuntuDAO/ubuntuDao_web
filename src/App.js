@@ -485,9 +485,9 @@ export const App  = () => {
                     />
                     <img id="roadmap" alt="info"  src={Roadmap}
                          className="token-roadmap-image-style"
-                    style={{
-                        width:'100vw'
-                    }}
+                    // style={{
+                    //     width:'100vw'
+                    // }}
                     />
                 </div>
             </div>

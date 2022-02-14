@@ -447,6 +447,7 @@ color:rgba(53, 44, 44, 1)
 .token-roadmap-image-style{
    display:flex;
      visibility:visible;
+     width: 100vw;
 }
 
 
@@ -1018,10 +1019,18 @@ display: flex;
      display:none;
     visibility:hidden;
 }
+.token-roadmap-image{
+    overflow-x: scroll;
+    height: 50vh;
+   width: 100vw;
+   background-color: #000000;
+}
 .token-roadmap-image-style{
     display:flex;
     visibility:visible;
-   height: 26vh;
+   height: 50vh;
+   width: 200vw;
+
    object-fit: cover;
 }
 .mobile-distribution-image-style{
