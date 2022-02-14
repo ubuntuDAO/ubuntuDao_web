@@ -20,7 +20,7 @@ import MobilePromotion from "./images/mobilePromotion.svg";
 import Mission from "./images/mission.svg";
 import Vision from "./images/vision.svg";
 import Transparency from "./images/tranparency-strategic.svg";
-import CommunityDriven from "./images/community-pan-african.svg";
+import CommunityDriven from "./images/community-pan-african (1).svg";
 // import Instagram from "./images/instagram.svg";
 // import Twitter from "./images/twitter.svg";
 import OverviewText from "./images/OverviewText.svg";
@@ -553,11 +553,12 @@ export const App  = () => {
                 </div>
             </div>
             <div className="footer-section-2">
-                <p>&copy; Ubuntu Dao </p>
+                {/* <p>&copy; Ubuntu Dao 2020 </p> */}
             </div>
             <div className="footer-section-3">
-            <a href="/"><p>+2347013395472</p></a>
+            
             <a href="/"><p>info@Ubuntudao.com </p></a>
+            <a href="/"><p>&copy; Ubuntu Dao 2020 </p></a>
             </div>
             
        
