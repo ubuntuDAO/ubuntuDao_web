@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import './App.css'
 
@@ -110,6 +110,60 @@ export const App  = () => {
         }
     }
 
+    useEffect(() => {
+       setTimeout(() => {
+         if (currentSlide=== LittlePhilantrophist){
+             setCurrentSlide(MadeInAfricaImage)
+             setSecondSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setFirstSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setFourthSlideStyle(null)
+             
+         }else if(currentSlide === MadeInAfricaImage){
+             
+
+                         setCurrentSlide(BlockchainImage)
+             setFourthSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+
+                        setFirstSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setSecondSlideStyle(null)
+         } else if(currentSlide === BlockchainImage){
+            
+
+                        setCurrentSlide(UbuntuCapitalImage)
+              setThirdSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+                        setFirstSlideStyle(null)
+                        setSecondSlideStyle(null)
+                        setFourthSlideStyle(null)
+         } else{
+             setCurrentSlide(LittlePhilantrophist)
+            
+                        setFirstSlideStyle({
+                            width: '32px',
+                            borderRadius: '20px',
+                            backgroundColor: '#ffffff'
+                        })
+
+                        setSecondSlideStyle(null)
+                        setThirdSlideStyle(null)
+                        setFourthSlideStyle(null)
+         }
+       }, 10000);
+    }, [currentSlide]);
+
 
 
   
@@ -179,6 +233,7 @@ export const App  = () => {
                 <p className="welcome-text">Promoting Blockchain adoption and a creator ecosystem in africa </p>
                 <a
                 href="/"
+                download="/UBUNTU DAO WHITEPAPER.pdf"
                 className="welcome-button"
                
                 >
@@ -208,7 +263,7 @@ export const App  = () => {
              <div className="about-info-section">
                 <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
-                <p className="about-text">It is a Blockchain Project that leverages the simplicity and communal spirit associated with meme tokens to drive Blockchain adoption and very importantly, promote a creator-ecosystem (web3 Startups) in Africa. The movement has already begun; to transit Africa from a (sadly) default consumption tilt to becoming production conscious and the Ubuntu Dao Project further emphasizes the truth that Africans are innovative enough and we can change ‘our’ world and sure enough ‘the’ world.              </p>
+                <p className="about-text">Ubuntu Dao is a community driven project that seeks to drive the adoption of Blockchain Technology in Africa through education, the stimulation of a creator ecosystem and strategic charity. This project will position Africa in the fore-front of this breakthrough technology, not just through its usage, but also in the creation of innovative solutions which will be adopted globally. The movement has already begun to transit Africa from a default consumption tilt to becoming production conscious abd the Ubuntu Dao project further emphasizes the truth that Africans are innovative enough and we can change 'our' world and sure enough, 'the' world.</p>
             {/* <a className="about-link"
            href="/"
             ><p>Read More</p></a> */}
@@ -545,7 +600,9 @@ export const App  = () => {
                 
                 </nav>
                 <div className="footer-links">
-                    <a href="/"><p>White Paper</p></a>
+                    <a href="/"
+                    download="/UBUNTU DAO WHITEPAPER.pdf"
+                    ><p>White Paper</p></a>
                     <a href="/"><p>Token</p></a>
                     <a href="/"><p>Roadmap</p></a>
                     <a href="/"><p>Contact Us</p></a>

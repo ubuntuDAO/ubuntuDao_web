@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.815379f7.css",
-    "main.js": "/static/js/main.47a73adc.js",
+    "main.js": "/static/js/main.655a4795.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/mainHomeSvg.svg": "/static/media/mainHomeSvg.9ad708e818870cd4e592.svg",
     "static/media/Made in Africa Initiative.svg": "/static/media/Made in Africa Initiative.e108d92a3d7b18e0bfffe36daae186c4.svg",
@@ -40,11 +40,11 @@
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.94ebad0714ecfa2ca824842d686d8ab6.svg",
     "static/media/menubar.svg": "/static/media/menubar.27dadae1c3a52787908cf181d81bc6d3.svg",
     "main.815379f7.css.map": "/static/css/main.815379f7.css.map",
-    "main.47a73adc.js.map": "/static/js/main.47a73adc.js.map",
+    "main.655a4795.js.map": "/static/js/main.655a4795.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.815379f7.css",
-    "static/js/main.47a73adc.js"
+    "static/js/main.655a4795.js"
   ]
 }
