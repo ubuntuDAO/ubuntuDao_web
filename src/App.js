@@ -234,6 +234,7 @@ export const App  = () => {
                 <a
                 target="_blank"
                 href={WhitepaperPDF}
+                rel="noreferrer"
                 className="welcome-button"
                
                 >
@@ -602,6 +603,7 @@ export const App  = () => {
                 <div className="footer-links">
                     <a target="_blank"
                 href={WhitepaperPDF}
+                rel="noreferrer"
                     ><p>White Paper</p></a>
                     <a href="/"><p>Token</p></a>
                     <a href="/"><p>Roadmap</p></a>
