@@ -48,10 +48,17 @@ import FacebookIcon from './images/facebook-icon.svg'
 import DiscordIcon from './images/discord-icon.svg'
 import RedditIcon from './images/reddit-icon.svg'
 
-import BlockchainImage from './images/Blockchain Dev Institute.svg'
-import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
-import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
-import LittlePhilantrophist from './images/Little Philanthropist.svg'
+// import BlockchainImage from './images/Blockchain Dev Institute.svg'
+// import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
+// import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
+// import LittlePhilantrophist from './images/Little Philanthropist.svg'
+
+// mobile
+import MobileBlockchainImage from './images/Mobile Blockchain Dev Institute.png'
+import MobileMadeInAfricaImage from './images/Mobile Made in Africa Initiative.png'
+import MobileUbuntuCapitalImage from './images/Mobile Ubuntu Capital.png'
+import MobileLittlePhilantrophist from './images/Mobile Little Philanthropist.png'
+
 
 import WhitepaperPDF from './images/UBUNTU DAO WHITEPAPER.pdf'
 import TypewriterComponent from 'typewriter-effect'
@@ -64,7 +71,7 @@ import {AnimationOnScroll} from 'react-animation-on-scroll'
 // import { mediaQueries } from "./responsive";
 export const App  = () => {
  const [menu, setMenu] = useState(false)
- const [currentSlide, setCurrentSlide] = useState(LittlePhilantrophist)
+ const [currentSlide, setCurrentSlide] = useState(MobileLittlePhilantrophist)
  const [firstSlideStyle, setFirstSlideStyle] = useState(null)
   const [secondSlideStyle, setSecondSlideStyle] = useState(null)
    const [thirdSlideStyle, setThirdSlideStyle] = useState(null)
@@ -112,8 +119,8 @@ export const App  = () => {
 
     useEffect(() => {
        setTimeout(() => {
-         if (currentSlide=== LittlePhilantrophist){
-             setCurrentSlide(MadeInAfricaImage)
+         if (currentSlide=== MobileLittlePhilantrophist){
+             setCurrentSlide(MobileMadeInAfricaImage)
              setSecondSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -123,10 +130,10 @@ export const App  = () => {
                         setThirdSlideStyle(null)
                         setFourthSlideStyle(null)
              
-         }else if(currentSlide === MadeInAfricaImage){
+         }else if(currentSlide === MobileMadeInAfricaImage){
              
 
-                         setCurrentSlide(BlockchainImage)
+                         setCurrentSlide(MobileBlockchainImage)
              setFourthSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -136,10 +143,10 @@ export const App  = () => {
                         setFirstSlideStyle(null)
                         setThirdSlideStyle(null)
                         setSecondSlideStyle(null)
-         } else if(currentSlide === BlockchainImage){
+         } else if(currentSlide === MobileBlockchainImage){
             
 
-                        setCurrentSlide(UbuntuCapitalImage)
+                        setCurrentSlide(MobileUbuntuCapitalImage)
               setThirdSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -149,7 +156,7 @@ export const App  = () => {
                         setSecondSlideStyle(null)
                         setFourthSlideStyle(null)
          } else{
-             setCurrentSlide(LittlePhilantrophist)
+             setCurrentSlide(MobileLittlePhilantrophist)
             
                         setFirstSlideStyle({
                             width: '32px',
@@ -305,7 +312,7 @@ export const App  = () => {
                     style={firstSlideStyle}
                     
                     onClick={()=>{
-                        setCurrentSlide(LittlePhilantrophist)
+                        setCurrentSlide(MobileLittlePhilantrophist)
                         setFirstSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -320,7 +327,7 @@ export const App  = () => {
                     </span>
                     <span 
                     onClick={()=>{
-                        setCurrentSlide(MadeInAfricaImage)
+                        setCurrentSlide(MobileMadeInAfricaImage)
                          setSecondSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -336,7 +343,7 @@ export const App  = () => {
                     </span>
                     <span onClick={()=>{
                         
-                        setCurrentSlide(UbuntuCapitalImage)
+                        setCurrentSlide(MobileUbuntuCapitalImage)
                          setThirdSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -351,7 +358,7 @@ export const App  = () => {
                         <p>&#160; </p>
                     </span>
                     <span onClick={()=>{
-                        setCurrentSlide(BlockchainImage)
+                        setCurrentSlide(MobileBlockchainImage)
                          setFourthSlideStyle({
                             width: '32px',
                             borderRadius: '20px',

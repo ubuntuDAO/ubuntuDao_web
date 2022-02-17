@@ -215,6 +215,7 @@ background-color: #ffffff;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .projects-page h1{
@@ -231,14 +232,14 @@ color: #352C2C;
 }
 .projects-section{
      width: 100wh;
-height: 437px;
+height: 75vh;
 display: flex;
 }
 
 .project-container{
     width: 100%;
     display: flex;
-    height: 100%;
+    height: 70vh;
     flex-direction: row;
     
 }
@@ -252,7 +253,7 @@ display: flex;
 
 .slide-container{
     position: absolute;
-    margin-top: 320px;
+    margin-top: 400px;
     margin-left: 42vw;
 
     width: 140px;
@@ -927,8 +928,7 @@ display: flex;
     display: flex;
     height: 30vh;
     flex-direction: row;
-    overflow-x: scroll;
-    scrollbar-track-color: #ffffff;
+   
     
 }
 
@@ -937,14 +937,14 @@ display: flex;
     display: flex;
     object-fit: cover;
     height: 30vh;
-    width: 250vw;
+    width: 100%;
     flex-direction: row;
 }
 
 .slide-container{
     position: absolute;
     margin-top: 190px;
-    margin-left: 42vw;
+    margin-left: 30vw;
     width: 140px;
     height: 16px;
     display: flex;
