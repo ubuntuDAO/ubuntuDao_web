@@ -53,7 +53,7 @@ import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
 import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
 import LittlePhilantrophist from './images/Little Philanthropist.svg'
 
-
+import WhitepaperPDF from './images/UBUNTU DAO WHITEPAPER.pdf'
 import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
 import 'animate.css/animate.min.css'
@@ -232,8 +232,8 @@ export const App  = () => {
                  </h1>
                 <p className="welcome-text">Promoting Blockchain adoption and a creator ecosystem in africa </p>
                 <a
-                href="/"
-                download="/UBUNTU DAO WHITEPAPER.pdf"
+                target="_blank"
+                href={WhitepaperPDF}
                 className="welcome-button"
                
                 >
@@ -600,8 +600,8 @@ export const App  = () => {
                 
                 </nav>
                 <div className="footer-links">
-                    <a href="/"
-                    download="/UBUNTU DAO WHITEPAPER.pdf"
+                    <a target="_blank"
+                href={WhitepaperPDF}
                     ><p>White Paper</p></a>
                     <a href="/"><p>Token</p></a>
                     <a href="/"><p>Roadmap</p></a>
