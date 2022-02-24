@@ -4,7 +4,7 @@ import './App.css'
 
 // import './src/images';
 
-import TokenomicsImage from "./images/tokenomicsnew.svg";
+import TokenomicsImage from "./images/tokenomicsnew (1).svg";
 import MobileTokenomicsImage from './images/mobile-treasury-imagenew.svg'
 import Empowering from "./images/Empowering.svg";
 import Creativity from "./images/Creativity.svg";

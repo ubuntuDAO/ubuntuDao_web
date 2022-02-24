@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.56e8f3d3.css",
-    "main.js": "/static/js/main.d1df0706.js",
+    "main.js": "/static/js/main.f2e76f13.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/mainHomeSvg.svg": "/static/media/mainHomeSvg.9ad708e818870cd4e592.svg",
     "static/media/Mobile Made in Africa Initiative.png": "/static/media/Mobile Made in Africa Initiative.8b5f24a80a9c2b65cebb.png",
@@ -21,10 +21,10 @@
     "static/media/mobileRoadmap.svg": "/static/media/mobileRoadmap.3cc6367845afd1ea7ddb2693d2dd5e85.svg",
     "static/media/Positioning.svg": "/static/media/Positioning.ec84027fd94078776c140c02de5bc76b.svg",
     "static/media/mobilePositioning.svg": "/static/media/mobilePositioning.337f27e93e59ef1a36803c6701797c84.svg",
-    "static/media/tokenomicsnew.svg": "/static/media/tokenomicsnew.87bff9cccb7c4d3697d20d3345f67dd3.svg",
     "static/media/mobile-treasury-imagenew.svg": "/static/media/mobile-treasury-imagenew.073f1c5e3aad2fc4a45d1d95f4553e71.svg",
     "static/media/community-pan-african (1).svg": "/static/media/community-pan-african (1).35670b177b75a93de9dff564db4445a8.svg",
     "static/media/tranparency-strategic.svg": "/static/media/tranparency-strategic.fa3d1505f511729bb812d8142e009798.svg",
+    "static/media/tokenomicsnew (1).svg": "/static/media/tokenomicsnew (1).dc2770af743f207cffd1b6bda3c6245e.svg",
     "static/media/UBUNTU DAO WHITEPAPER.pdf": "/static/media/UBUNTU DAO WHITEPAPER.c85cd8ef7363a8a5912d.pdf",
     "static/media/mobile-tokenomics.svg": "/static/media/mobile-tokenomics.e9873d00d5ad2e25488769b3ab11c95f.svg",
     "static/media/tokenomicsDistribution.svg": "/static/media/tokenomicsDistribution.141ccb95f539785caf928174ad68da78.svg",
@@ -41,11 +41,11 @@
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.94ebad0714ecfa2ca824842d686d8ab6.svg",
     "static/media/menubar.svg": "/static/media/menubar.27dadae1c3a52787908cf181d81bc6d3.svg",
     "main.56e8f3d3.css.map": "/static/css/main.56e8f3d3.css.map",
-    "main.d1df0706.js.map": "/static/js/main.d1df0706.js.map",
+    "main.f2e76f13.js.map": "/static/js/main.f2e76f13.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56e8f3d3.css",
-    "static/js/main.d1df0706.js"
+    "static/js/main.f2e76f13.js"
   ]
 }
