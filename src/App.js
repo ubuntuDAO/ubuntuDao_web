@@ -29,8 +29,8 @@ import TokenomicsText from './images/TokenomicsText.svg';
 import MobileRoadmap from './images/mobileRoadmap.svg'
 // import MobileDistribution from './images/mobileDistribution.svg'
 // import TokenDistribution from './images/tokenDistributionImage.svg'
-import TokenomicsDistribution from './images/tokenomicsDistribution.svg'
-import MobileTokenomicsDistribution from './images/mobile-tokenomics.svg'
+import TokenomicsDistribution from './images/tokenDistributionImage (2).svg'
+import MobileTokenomicsDistribution from './images/mobile-tokenomics (1).svg'
 import Roadmap from './images/newUbuntu-Dao-ROADMAP.svg'
 import MenuBar from './images/menubar.svg'
 import UbuntuLogo from './images/ubuntuMainLogo.svg'
@@ -133,7 +133,6 @@ export const App  = () => {
                         setFourthSlideStyle(null)
              
          }else if(currentSlide === MobileMadeInAfricaImage){
-             
 
                          setCurrentSlide(MobileBlockchainImage)
                           setWebCurrentSlide(BlockchainImage)
@@ -630,7 +629,7 @@ export const App  = () => {
             </div>
             <div className="footer-section-3">
             
-            <a href="/"><p>partnerships@UbuntuDAO.com </p></a>
+            <a href="/" className="partnership-footer"><p>partnerships@UbuntuDAO.com </p></a>
             <a href="/" className="copy"><p>&copy; Ubuntu DAO 2022 </p></a>
             </div>
             
