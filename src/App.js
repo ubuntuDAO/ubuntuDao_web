@@ -48,10 +48,10 @@ import FacebookIcon from './images/facebook-icon.svg'
 import DiscordIcon from './images/discord-icon.svg'
 import RedditIcon from './images/reddit-icon.svg'
 
-// import BlockchainImage from './images/Blockchain Dev Institute.svg'
-// import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
-// import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
-// import LittlePhilantrophist from './images/Little Philanthropist.svg'
+import BlockchainImage from './images/Blockchain Dev Institute.svg'
+import MadeInAfricaImage from './images/Made in Africa Initiative.svg'
+import UbuntuCapitalImage from './images/Ubuntu Capital.svg'
+import LittlePhilantrophist from './images/Little Philanthropist.svg'
 
 // mobile
 import MobileBlockchainImage from './images/Mobile Blockchain Dev Institute.png'
@@ -72,6 +72,7 @@ import {AnimationOnScroll} from 'react-animation-on-scroll'
 export const App  = () => {
  const [menu, setMenu] = useState(false)
  const [currentSlide, setCurrentSlide] = useState(MobileLittlePhilantrophist)
+ const [webCurrentSlide, setWebCurrentSlide] = useState(LittlePhilantrophist)
  const [firstSlideStyle, setFirstSlideStyle] = useState(null)
   const [secondSlideStyle, setSecondSlideStyle] = useState(null)
    const [thirdSlideStyle, setThirdSlideStyle] = useState(null)
@@ -121,6 +122,7 @@ export const App  = () => {
        setTimeout(() => {
          if (currentSlide=== MobileLittlePhilantrophist){
              setCurrentSlide(MobileMadeInAfricaImage)
+             setWebCurrentSlide(MadeInAfricaImage)
              setSecondSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -134,6 +136,7 @@ export const App  = () => {
              
 
                          setCurrentSlide(MobileBlockchainImage)
+                          setWebCurrentSlide(BlockchainImage)
              setFourthSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -147,6 +150,7 @@ export const App  = () => {
             
 
                         setCurrentSlide(MobileUbuntuCapitalImage)
+                         setWebCurrentSlide(UbuntuCapitalImage)
               setThirdSlideStyle({
                             width: '32px',
                             borderRadius: '20px',
@@ -157,6 +161,7 @@ export const App  = () => {
                         setFourthSlideStyle(null)
          } else{
              setCurrentSlide(MobileLittlePhilantrophist)
+              setWebCurrentSlide(LittlePhilantrophist)
             
                         setFirstSlideStyle({
                             width: '32px',
@@ -271,7 +276,7 @@ export const App  = () => {
              <div className="about-info-section">
                 <img alt="overview" src={OverviewText} className="about-header"/>
                 <h3 className="about-sub-header"> Collaborative community to provide support</h3>
-                <p className="about-text">Ubuntu Dao is a community driven project that seeks to drive the adoption of Blockchain Technology in Africa through education, the stimulation of a creator ecosystem and strategic charity. This project will position Africa in the fore-front of this breakthrough technology, not just through its usage, but also in the creation of innovative solutions which will be adopted globally. The movement has already begun to transit Africa from a default consumption tilt to becoming production conscious abd the Ubuntu Dao project further emphasizes the truth that Africans are innovative enough and we can change 'our' world and sure enough, 'the' world.</p>
+                <p className="about-text">Ubuntu Dao is a community driven project that seeks to drive the adoption of Blockchain Technology in Africa through education, the stimulation of a creator ecosystem and strategic charity. This project will position Africa in the fore-front of this breakthrough technology, not just through its usage, but also in the creation of innovative solutions which will be adopted globally. The movement has already begun to transit Africa from a default consumption tilt to becoming production conscious and the Ubuntu Dao project further emphasizes the truth that Africans are innovative enough and we can change 'our' world and sure enough, 'the' world.</p>
             {/* <a className="about-link"
            href="/"
             ><p>Read More</p></a> */}
@@ -306,7 +311,8 @@ export const App  = () => {
         <h1>OUR PROJECTS</h1>
         <div className="projects-section">
              <div className="project-container">
-              <img src={currentSlide} alt='our project initiative'/>
+              <img src={currentSlide} alt='our project initiative' className="mobile-project-image-card"/>
+              <img src={webCurrentSlide} alt="wrb our porject initiative" className="project-image-card"/>
                 <div className="slide-container">
                     <span 
                     style={firstSlideStyle}
@@ -624,7 +630,7 @@ export const App  = () => {
             </div>
             <div className="footer-section-3">
             
-            <a href="/"><p>info@UbuntuDAO.com </p></a>
+            <a href="/"><p>partnerships@UbuntuDAO.com </p></a>
             <a href="/" className="copy"><p>&copy; Ubuntu DAO 2022 </p></a>
             </div>
             

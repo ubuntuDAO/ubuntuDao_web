@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a72635d.css",
-    "main.js": "/static/js/main.f2e76f13.js",
+    "main.css": "/static/css/main.e59fd122.css",
+    "main.js": "/static/js/main.777cd420.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/mainHomeSvg.svg": "/static/media/mainHomeSvg.9ad708e818870cd4e592.svg",
+    "static/media/Made in Africa Initiative.svg": "/static/media/Made in Africa Initiative.e108d92a3d7b18e0bfffe36daae186c4.svg",
     "static/media/Mobile Made in Africa Initiative.png": "/static/media/Mobile Made in Africa Initiative.8b5f24a80a9c2b65cebb.png",
     "static/media/mobileHomeSvg.svg": "/static/media/mobileHomeSvg.efa0d16512ccffadbd3c.svg",
+    "static/media/Little Philanthropist.svg": "/static/media/Little Philanthropist.8779ca406eeb0b64f67497cc4ca21561.svg",
+    "static/media/Ubuntu Capital.svg": "/static/media/Ubuntu Capital.0db9fb1a9b07174a187c1ef826447a78.svg",
     "static/media/Mobile Little Philanthropist.png": "/static/media/Mobile Little Philanthropist.e57a423aa0ce61893ed1.png",
     "static/media/Mobile Ubuntu Capital.png": "/static/media/Mobile Ubuntu Capital.c21063368d46018e278d.png",
     "static/media/mobileEmpowering.svg": "/static/media/mobileEmpowering.34779e6863b12bdf1274bcc1e3c546f2.svg",
@@ -16,6 +19,7 @@
     "static/media/Creativity.svg": "/static/media/Creativity.6faca2e6326b138bf40ee809be663487.svg",
     "static/media/headerImage.svg": "/static/media/headerImage.59d3b20c833df9b1591e2b9c1c67a2d8.svg",
     "static/media/newUbuntu-Dao-ROADMAP.svg": "/static/media/newUbuntu-Dao-ROADMAP.db56db2a293dbdb4ba593cc6bccf68ee.svg",
+    "static/media/Blockchain Dev Institute.svg": "/static/media/Blockchain Dev Institute.c0d61dc39e448be656c75fb9006a9a93.svg",
     "static/media/Mobile Blockchain Dev Institute.png": "/static/media/Mobile Blockchain Dev Institute.47f5f4cfe9e288657362.png",
     "static/media/ubuntuMainLogo.svg": "/static/media/ubuntuMainLogo.c0bf442a994619774bfe225666c8bbdd.svg",
     "static/media/mobileRoadmap.svg": "/static/media/mobileRoadmap.3cc6367845afd1ea7ddb2693d2dd5e85.svg",
@@ -40,12 +44,12 @@
     "index.html": "/index.html",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.94ebad0714ecfa2ca824842d686d8ab6.svg",
     "static/media/menubar.svg": "/static/media/menubar.27dadae1c3a52787908cf181d81bc6d3.svg",
-    "main.1a72635d.css.map": "/static/css/main.1a72635d.css.map",
-    "main.f2e76f13.js.map": "/static/js/main.f2e76f13.js.map",
+    "main.e59fd122.css.map": "/static/css/main.e59fd122.css.map",
+    "main.777cd420.js.map": "/static/js/main.777cd420.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a72635d.css",
-    "static/js/main.f2e76f13.js"
+    "static/css/main.e59fd122.css",
+    "static/js/main.777cd420.js"
   ]
 }
